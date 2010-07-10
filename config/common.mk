@@ -58,6 +58,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/bin/sysinit:system/bin/sysinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
