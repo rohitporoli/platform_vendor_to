@@ -17,6 +17,10 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/to/overlay/common \
     vendor/to/overlay/dictionaries
 
+# init.d script support
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/bin/sysinit:system/bin/sysinit
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
