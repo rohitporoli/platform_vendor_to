@@ -31,3 +31,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/to/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
+# Camera Effects
+PRODUCT_COPY_FILES +=  \
+    vendor/to/prebuilt/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
+    vendor/to/prebuilt/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd
