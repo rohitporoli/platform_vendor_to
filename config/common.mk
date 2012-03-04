@@ -58,6 +58,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/to/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/to/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/to/overlay/common
