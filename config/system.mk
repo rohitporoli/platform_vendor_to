@@ -17,6 +17,12 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/to/overlay/common \
     vendor/to/overlay/dictionaries
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/to/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/to/prebuilt/bin/50-base.sh:system/addon.d/50-base.sh \
+
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
