@@ -1,3 +1,6 @@
+# Pull in Vendor props
+$(shell vendor/to/device/samsung/props):
+
 # Inherit commnon device stuff 
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 

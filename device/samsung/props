@@ -1,0 +1,19 @@
+#!/bin/sh
+# Copyright (C) 2014 Team OctOS
+#
+# OctOS overlay script created by Treken for copying files to specified directories
+#
+# For recursive directories a permisions flag "-p" must be used
+# For overwriting files the force flag "-f" must be used
+#
+# Disclaimer:
+# We are not responsible if you edit this script and use it for otherthings
+
+# Overwrite jf-common overlay for storage list
+target="vendor/"
+if [ -e "$target/samsung/" ] # The "-e" test for existence
+then
+echo "Vendor props already exists!"
+else
+git clone https://github.com/TheMuppets/proprietary_vendor_samsung vendor/samsung
+fi
