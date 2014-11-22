@@ -13,20 +13,13 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (to_jflte,$(TARGET_PRODUCT))
+ifeq (to_jfltevzw,$(TARGET_PRODUCT))
 
-# Inherit some common OctOS stuff.
-$(call inherit-product, vendor/to/config/cdma.mk)
-$(call inherit-product, vendor/to/config/common_full_phone.mk)
+# Inherit TO device configuration
+$(call inherit-product, vendor/to/config/common.mk)
+$(call inherit-product, vendor/to/device/samsung/jfltevzw/to.mk)
 
 # Inherit CM device configuration
-$(call inherit-product, device/samsung/jflte/cm.mk)
+$(call inherit-product, device/samsung/jfltevzw/cm.mk)
 
-# Override AOSP build properties
-# Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := to_jflte
-PRODUCT_DEVICE := jflte
-PRODUCT_BRAND := samsung
-PRODUCT_MANUFACTURER := samsung
-PRODUCT_MODEL := SCH-I545
 endif

@@ -1,3 +1,4 @@
+# Inherit commnon device stuff 
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 # Enhanced NFC
@@ -16,4 +17,3 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
 PRODUCT_NAME := to_jfltevzw
 PRODUCT_DEVICE := jfltevzw
-
