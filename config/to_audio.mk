@@ -9,27 +9,42 @@ UI_PATH := vendor/to/prebuilt/common/media/audio/ui
 
 # Alarms
 PRODUCT_COPY_FILES += \
-	$(ALARM_PATH)/CyanAlarm.ogg:system/media/audio/alarms/CyanAlarm.ogg \
-	$(ALARM_PATH)/NuclearLaunch.ogg:system/media/audio/alarms/NuclearLaunch.ogg
+	$(ALARM_PATH)/Argon.ogg:system/media/audio/alarms/Argon.ogg \
+	$(ALARM_PATH)/Carbon.ogg:system/media/audio/alarms/Carbon.ogg \
+	$(ALARM_PATH)/Helium.ogg:system/media/audio/alarms/Helium.ogg \
+	$(ALARM_PATH)/Krypton.ogg:system/media/audio/alarms/Krypton.ogg \
+	$(ALARM_PATH)/Neon.ogg:system/media/audio/alarms/Neon.ogg \
+	$(ALARM_PATH)/Osmium.ogg:system/media/audio/alarms/Osmium.ogg \
+	$(ALARM_PATH)/Oxygen.ogg:system/media/audio/alarms/Oxygen.ogg \
+	$(ALARM_PATH)/Platinum.ogg:system/media/audio/alarms/Platinum.ogg
 
 # Notifications
 PRODUCT_COPY_FILES += \
-	$(NOTIFICATION_PATH)/CyanDoink.ogg:system/media/audio/notifications/CyanDoink.ogg \
-	$(NOTIFICATION_PATH)/CyanMail.ogg:system/media/audio/notifications/CyanMail.ogg \
-	$(NOTIFICATION_PATH)/CyanMessage.ogg:system/media/audio/notifications/CyanMessage.ogg \
-	$(NOTIFICATION_PATH)/Laser.ogg:system/media/audio/notifications/Laser.ogg \
-	$(NOTIFICATION_PATH)/Naughty.ogg:system/media/audio/notifications/Naughty.ogg \
-	$(NOTIFICATION_PATH)/Pong.ogg:system/media/audio/notifications/Pong.ogg \
-	$(NOTIFICATION_PATH)/Rang.ogg:system/media/audio/notifications/Rang.ogg \
-	$(NOTIFICATION_PATH)/Stone.ogg:system/media/audio/notifications/Stone.ogg
+	$(NOTIFICATION_PATH)/Ariel.ogg:system/media/audio/notifications/Ariel.ogg \
+	$(NOTIFICATION_PATH)/Carme.ogg:system/media/audio/notifications/Carme.ogg \
+	$(NOTIFICATION_PATH)/Cares.ogg:system/media/audio/notifications/Cares.ogg \
+	$(NOTIFICATION_PATH)/Elara.ogg:system/media/audio/notifications/Elara.ogg \
+	$(NOTIFICATION_PATH)/Europa.ogg:system/media/audio/notifications/Europa.ogg \
+	$(NOTIFICATION_PATH)/Iapetus.ogg:system/media/audio/notifications/Iapetus.ogg \
+	$(NOTIFICATION_PATH)/Rhea.ogg:system/media/audio/notifications/Rhea.ogg \
+	$(NOTIFICATION_PATH)/Salacia.ogg:system/media/audio/notifications/Salacia.ogg \
+	$(NOTIFICATION_PATH)/Tethys.ogg:system/media/audio/notifications/Tethys.ogg \
+	$(NOTIFICATION_PATH)/Titan.ogg:system/media/audio/notifications/Titan.ogg
 
 # Ringtones
 PRODUCT_COPY_FILES += \
-	$(RINGTONE_PATH)/Boxbeat.ogg:system/media/audio/ringtones/Boxbeat.ogg \
-	$(RINGTONE_PATH)/CyanTone.ogg:system/media/audio/ringtones/CyanTone.ogg \
-	$(RINGTONE_PATH)/Highscore.ogg:system/media/audio/ringtones/Highscore.ogg \
-	$(RINGTONE_PATH)/Lyon.ogg:system/media/audio/ringtones/Lyon.ogg \
-	$(RINGTONE_PATH)/Rockin.ogg:system/media/audio/ringtones/Rockin.ogg \
-	$(RINGTONE_PATH)/Sheep.mp3:system/media/audio/ringtones/Sheep.mp3
+	$(RINGTONE_PATH)/Callisto.ogg:system/media/audio/ringtones/Callisto.ogg \
+	$(RINGTONE_PATH)/Dione.ogg:system/media/audio/ringtones/Dione.ogg \
+	$(RINGTONE_PATH)/Ganymede.ogg:system/media/audio/ringtones/Ganymede.ogg \
+	$(RINGTONE_PATH)/Luna.ogg:system/media/audio/ringtones/Luna.ogg \
+	$(RINGTONE_PATH)/Oberon.ogg:system/media/audio/ringtones/Oberon.ogg \
+	$(RINGTONE_PATH)/Phobos.mp3:system/media/audio/ringtones/Phobos.mp3 \
+	$(RINGTONE_PATH)/Phobos.mp3:system/media/audio/ringtones/Phobos.mp3 \
+	$(RINGTONE_PATH)/RobotsforEveryone.mp3:system/media/audio/ringtones/RobotsforEveryone.mp3 \
+	$(RINGTONE_PATH)/Sedna.mp3:system/media/audio/ringtones/Sedna.mp3 \
+	$(RINGTONE_PATH)/SpagnolaOrchestration.mp3:system/media/audio/ringtones/SpagnolaOrchestration.mp3 \
+	$(RINGTONE_PATH)/Titania.mp3:system/media/audio/ringtones/Titania.mp3 \
+	$(RINGTONE_PATH)/Tritan.mp3:system/media/audio/ringtones/Tritan.mp3 \
+	$(RINGTONE_PATH)/Umbriel.mp3:system/media/audio/ringtones/Umbriel.mp3
 
 

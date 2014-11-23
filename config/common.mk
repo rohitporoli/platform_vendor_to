@@ -63,6 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# selinux dialog
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
