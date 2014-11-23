@@ -143,6 +143,7 @@ PRODUCT_PACKAGES += \
 
 # Custom TO packages
 PRODUCT_PACKAGES += \
+    TOHome \
     Launcher3 \
     Trebuchet \
     DSPManager \
@@ -214,9 +215,9 @@ PRODUCT_PACKAGES += \
     su
 
 # Terminal Emulator
-#PRODUCT_COPY_FILES +=  \
-#    vendor/to/proprietary/Term.apk:system/app/Term/Term.apk \
-#    vendor/to/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
+PRODUCT_COPY_FILES +=  \
+    vendor/to/proprietary/Term.apk:system/app/Term/Term.apk \
+   vendor/to/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/app/Term/lib/arm/libjackpal-androidterm4.so
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1

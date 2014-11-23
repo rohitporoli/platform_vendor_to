@@ -1,10 +1,8 @@
-CyanogenMod
-===============
+Team OctOS
+==========
+New change log starts here
 
-Visit http://github.com/CyanogenMod for full source and git access.
-
-Visit http://review.cyanogenmod.org for our Gerrit instance.
-
+CyanogenMod-
 CHANGELOG (notable new features)
 ---------
 ### 11.0.0 M11

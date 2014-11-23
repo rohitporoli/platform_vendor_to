@@ -22,7 +22,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(NOTIFICATION_PATH)/Ariel.ogg:system/media/audio/notifications/Ariel.ogg \
 	$(NOTIFICATION_PATH)/Carme.ogg:system/media/audio/notifications/Carme.ogg \
-	$(NOTIFICATION_PATH)/Cares.ogg:system/media/audio/notifications/Cares.ogg \
+	$(NOTIFICATION_PATH)/Ceres.ogg:system/media/audio/notifications/Ceres.ogg \
 	$(NOTIFICATION_PATH)/Elara.ogg:system/media/audio/notifications/Elara.ogg \
 	$(NOTIFICATION_PATH)/Europa.ogg:system/media/audio/notifications/Europa.ogg \
 	$(NOTIFICATION_PATH)/Iapetus.ogg:system/media/audio/notifications/Iapetus.ogg \
@@ -38,13 +38,12 @@ PRODUCT_COPY_FILES += \
 	$(RINGTONE_PATH)/Ganymede.ogg:system/media/audio/ringtones/Ganymede.ogg \
 	$(RINGTONE_PATH)/Luna.ogg:system/media/audio/ringtones/Luna.ogg \
 	$(RINGTONE_PATH)/Oberon.ogg:system/media/audio/ringtones/Oberon.ogg \
-	$(RINGTONE_PATH)/Phobos.mp3:system/media/audio/ringtones/Phobos.mp3 \
-	$(RINGTONE_PATH)/Phobos.mp3:system/media/audio/ringtones/Phobos.mp3 \
-	$(RINGTONE_PATH)/RobotsforEveryone.mp3:system/media/audio/ringtones/RobotsforEveryone.mp3 \
-	$(RINGTONE_PATH)/Sedna.mp3:system/media/audio/ringtones/Sedna.mp3 \
-	$(RINGTONE_PATH)/SpagnolaOrchestration.mp3:system/media/audio/ringtones/SpagnolaOrchestration.mp3 \
-	$(RINGTONE_PATH)/Titania.mp3:system/media/audio/ringtones/Titania.mp3 \
-	$(RINGTONE_PATH)/Tritan.mp3:system/media/audio/ringtones/Tritan.mp3 \
-	$(RINGTONE_PATH)/Umbriel.mp3:system/media/audio/ringtones/Umbriel.mp3
+	$(RINGTONE_PATH)/Phobos.ogg:system/media/audio/ringtones/Phobos.ogg \
+	$(RINGTONE_PATH)/RobotsforEveryone.ogg:system/media/audio/ringtones/RobotsforEveryone.ogg \
+	$(RINGTONE_PATH)/Sedna.ogg:system/media/audio/ringtones/Sedna.ogg \
+	$(RINGTONE_PATH)/SpagnolaOrchestration.ogg:system/media/audio/ringtones/SpagnolaOrchestration.ogg \
+	$(RINGTONE_PATH)/Titania.ogg:system/media/audio/ringtones/Titania.ogg \
+	$(RINGTONE_PATH)/Triton.ogg:system/media/audio/ringtones/Triton.ogg \
+	$(RINGTONE_PATH)/Umbriel.ogg:system/media/audio/ringtones/Umbriel.ogg
 
 
