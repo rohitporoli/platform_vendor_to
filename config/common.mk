@@ -107,7 +107,7 @@ PRODUCT_COPY_FILES += \
 
 # TO-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/etc/init.local.rc:root/init.to.rc
+    vendor/to/prebuilt/common/etc/init.local.rc:root/init.cm.rc
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
