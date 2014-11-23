@@ -331,7 +331,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.to.display.version=$(TO_DISPLAY_VERSION)
+  ro.cm.display.version=$(TO_DISPLAY_VERSION)
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 
