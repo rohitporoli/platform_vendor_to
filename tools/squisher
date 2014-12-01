@@ -50,20 +50,13 @@ echo -e
 # framework-res.apk in parallel with other apks
 mkdir -p $REPACK/parallel
 cd $REPACK/parallel
-cp $REPACK/ota/system/framework/framework-res.apk .
-cp $REPACK/ota/system/app/*.apk .
+
+find $REPACK/ota/system -name '*.apk' | while read APK; do
+    ln -s $APK .
+done
 
 # Do optimization in parallel
 find ./ -name \*.apk | $XARGS $OPTICHARGER
-
-# Move optimized apks to repack directory
-mv -f $REPACK/parallel/framework-res.apk $REPACK/ota/system/framework/framework-res.apk
-mv -f $REPACK/parallel/*.apk $REPACK/ota/system/app/
-
-# Optimize /priv-app/
-cp $REPACK/ota/system/priv-app/*.apk .
-find ./ -name \*.apk | $XARGS $OPTICHARGER
-mv -f $REPACK/parallel/*.apk $REPACK/ota/system/priv-app/
 
 # Return to directory
 cd $REPACK/ota
