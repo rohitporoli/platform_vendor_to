@@ -111,6 +111,13 @@ PRODUCT_PACKAGES += \
     CMAccount \
     TOHome
 
+# Custom Team-OctOS packages
+PRODUCT_PACKAGES += \
+    BlueBalls \
+    OctPapers \
+    OctPhase \
+    OctSun
+
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
