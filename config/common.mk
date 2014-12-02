@@ -29,9 +29,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Thank you, please drive thru!
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.dun.override=0
 
-ifneq ($(TARGET_BUILD_VARIANT),eng)
-# Enable ADB authentication
+ifeq ($(TARGET_BUILD_VARIANT),user)
+# Enable ADB authentication for user builds only
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+else
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 endif
 
 # Copy over the changelog to the device
