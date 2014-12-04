@@ -1,4 +1,10 @@
+LOCAL_PATH := $(call my-dir)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
 $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
+
+# Inherit device common stuff specific to TO
+$(call inherit-product, vendor/to/device/samsung/d2-common/to.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
