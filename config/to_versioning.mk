@@ -62,9 +62,9 @@ ifeq ($(TO_BUILDTYPE), RELEASE)
     endif
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        TO_VERSION := OCT-L-v$(PRODUCT_VERSION_MAJOR)-$(TO_BUILDTYPE)$(TO_EXTRAVERSION)-$(shell date -u +%Y%m%d)
+        TO_VERSION := OCT-L-$(TO_BUILDTYPE)$(TO_EXTRAVERSION)-$(shell date -u +%Y%m%d-%H%M)
     else
-        TO_VERSION := OCT-L-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(TO_BUILDTYPE)$(TO_EXTRAVERSION)-$(shell date -u +%Y%m%d)
+        TO_VERSION := OCT-L-$(TO_BUILDTYPE)$(TO_EXTRAVERSION)-$(shell date -u +%Y%m%d-%H%M)
     endif
 endif
 
