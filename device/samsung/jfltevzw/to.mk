@@ -6,6 +6,9 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 # Inherit some common TO stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
+# Inherit some jf-common over-rides
+$(call inherit-product, vendor/to/device/samsung/jf-common/to.mk)
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltevzw \
   TARGET_DEVICE=jfltevzw \
