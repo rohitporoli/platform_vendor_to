@@ -208,3 +208,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
+
+# Clean up old builds
+$(shell rm -rf $(OUT)/OCT-L*.zip*)
+$(shell rm -rf $(OUT)/to_*ota*.zip)
