@@ -4,6 +4,7 @@ add_lunch_combo to_d2vzw-userdebug
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_grouper-userdebug
 add_lunch_combo to_hammerhead-userdebug
+add_lunch_combo to_i9300-userdebug
 add_lunch_combo to_jflteatt-userdebug
 add_lunch_combo to_jfltespr-userdebug
 add_lunch_combo to_jfltetmo-userdebug
