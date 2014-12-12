@@ -1,9 +1,9 @@
 [
   {
-    "remote": "gh",
-    "repository": "cjkacz/android_device_samsung_i9300",
+    "remote": "to",
+    "repository": "platform_device_samsung_i9300",
     "target_path": "device/samsung/i9300",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
