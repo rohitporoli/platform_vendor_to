@@ -107,7 +107,6 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    CMAccount \
     TOHome
 
 # Custom Team-OctOS packages
