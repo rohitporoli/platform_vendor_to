@@ -40,9 +40,9 @@ mkdir -p $PREBUILT_DIR/lib
 
 if [ -d $TARGET_DIR ]; then
     echo "Copying files..."
-    cp -r $TARGET_DIR/system/framework/webview $PREBUILT_DIR/framework/
+    cp -r $TARGET_DIR/obj/APPS/webviewchromium-paks_intermediates/ $PREBUILT_DIR/framework/
     cp $TARGET_DIR/system/lib/libwebviewchromium.so $PREBUILT_DIR/lib/libwebviewchromium.so
-    cp $TARGET_DIR/../../common/obj/JAVA_LIBRARIES/android_webview_java_intermediates/javalib.jar $PREBUILT_DIR/android_webview_java.jar
+    cp $TARGET_DIR/../../common/obj/JAVA_LIBRARIES/android_webview_java_with_new_resources_intermediates/javalib.jar $PREBUILT_DIR/android_webview_java.jar
 else
     echo "Please ensure that you have ran a full build prior to running this script!"
     return 1;
@@ -71,60 +71,60 @@ echo $HASH > $PREBUILT_DIR/hash.txt
 LOCAL_PATH := prebuilts/chromium/__DEVICE__/
 
 PRODUCT_COPY_FILES += \\
-    \$(LOCAL_PATH)/framework/webview/paks/am.pak:system/framework/webview/paks/am.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ar.pak:system/framework/webview/paks/ar.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/bg.pak:system/framework/webview/paks/bg.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/bn.pak:system/framework/webview/paks/bn.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ca.pak:system/framework/webview/paks/ca.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/cs.pak:system/framework/webview/paks/cs.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/da.pak:system/framework/webview/paks/da.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/de.pak:system/framework/webview/paks/de.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/el.pak:system/framework/webview/paks/el.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/en-GB.pak:system/framework/webview/paks/en-GB.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/en-US.pak:system/framework/webview/paks/en-US.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/es.pak:system/framework/webview/paks/es.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/es-419.pak:system/framework/webview/paks/es-419.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/et.pak:system/framework/webview/paks/et.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/fa.pak:system/framework/webview/paks/fa.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/fi.pak:system/framework/webview/paks/fi.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/fil.pak:system/framework/webview/paks/fil.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/fr.pak:system/framework/webview/paks/fr.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/gu.pak:system/framework/webview/paks/gu.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/he.pak:system/framework/webview/paks/he.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/hi.pak:system/framework/webview/paks/hi.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/hr.pak:system/framework/webview/paks/hr.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/hu.pak:system/framework/webview/paks/hu.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/id.pak:system/framework/webview/paks/id.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/it.pak:system/framework/webview/paks/it.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ja.pak:system/framework/webview/paks/ja.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/kn.pak:system/framework/webview/paks/kn.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ko.pak:system/framework/webview/paks/ko.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/lt.pak:system/framework/webview/paks/lt.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/lv.pak:system/framework/webview/paks/lv.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ml.pak:system/framework/webview/paks/ml.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/mr.pak:system/framework/webview/paks/mr.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ms.pak:system/framework/webview/paks/ms.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/nb.pak:system/framework/webview/paks/nb.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/nl.pak:system/framework/webview/paks/nl.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/pl.pak:system/framework/webview/paks/pl.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/pt-BR.pak:system/framework/webview/paks/pt-BR.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/pt-PT.pak:system/framework/webview/paks/pt-PT.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ro.pak:system/framework/webview/paks/ro.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ru.pak:system/framework/webview/paks/ru.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/sk.pak:system/framework/webview/paks/sk.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/sl.pak:system/framework/webview/paks/sl.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/sr.pak:system/framework/webview/paks/sr.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/sv.pak:system/framework/webview/paks/sv.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/sw.pak:system/framework/webview/paks/sw.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/ta.pak:system/framework/webview/paks/ta.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/te.pak:system/framework/webview/paks/te.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/th.pak:system/framework/webview/paks/th.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/tr.pak:system/framework/webview/paks/tr.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/uk.pak:system/framework/webview/paks/uk.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/vi.pak:system/framework/webview/paks/vi.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/webviewchromium.pak:system/framework/webview/paks/webviewchromium.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/zh-CN.pak:system/framework/webview/paks/zh-CN.pak \\
-    \$(LOCAL_PATH)/framework/webview/paks/zh-TW.pak:system/framework/webview/paks/zh-TW.pak \\
+    \$(LOCAL_PATH)/framework/am.pak:data/data/com.android.chrome/app_chrome/paks/am.pak \\
+    \$(LOCAL_PATH)/framework/ar.pak:data/data/com.android.chrome/app_chrome/paks/ar.pak \\
+    \$(LOCAL_PATH)/framework/bg.pak:data/data/com.android.chrome/app_chrome/paks/bg.pak \\
+    \$(LOCAL_PATH)/framework/bn.pak:data/data/com.android.chrome/app_chrome/paks/bn.pak \\
+    \$(LOCAL_PATH)/framework/ca.pak:data/data/com.android.chrome/app_chrome/paks/ca.pak \\
+    \$(LOCAL_PATH)/framework/cs.pak:data/data/com.android.chrome/app_chrome/paks/cs.pak \\
+    \$(LOCAL_PATH)/framework/da.pak:data/data/com.android.chrome/app_chrome/paks/da.pak \\
+    \$(LOCAL_PATH)/framework/de.pak:data/data/com.android.chrome/app_chrome/paks/de.pak \\
+    \$(LOCAL_PATH)/framework/el.pak:data/data/com.android.chrome/app_chrome/paks/el.pak \\
+    \$(LOCAL_PATH)/framework/en-GB.pak:data/data/com.android.chrome/app_chrome/paks/en-GB.pak \\
+    \$(LOCAL_PATH)/framework/en-US.pak:data/data/com.android.chrome/app_chrome/paks/en-US.pak \\
+    \$(LOCAL_PATH)/framework/es.pak:data/data/com.android.chrome/app_chrome/paks/es.pak \\
+    \$(LOCAL_PATH)/framework/es-419.pak:data/data/com.android.chrome/app_chrome/paks/es-419.pak \\
+    \$(LOCAL_PATH)/framework/et.pak:data/data/com.android.chrome/app_chrome/paks/et.pak \\
+    \$(LOCAL_PATH)/framework/fa.pak:data/data/com.android.chrome/app_chrome/paks/fa.pak \\
+    \$(LOCAL_PATH)/framework/fi.pak:data/data/com.android.chrome/app_chrome/paks/fi.pak \\
+    \$(LOCAL_PATH)/framework/fil.pak:data/data/com.android.chrome/app_chrome/paks/fil.pak \\
+    \$(LOCAL_PATH)/framework/fr.pak:data/data/com.android.chrome/app_chrome/paks/fr.pak \\
+    \$(LOCAL_PATH)/framework/gu.pak:data/data/com.android.chrome/app_chrome/paks/gu.pak \\
+    \$(LOCAL_PATH)/framework/he.pak:data/data/com.android.chrome/app_chrome/paks/he.pak \\
+    \$(LOCAL_PATH)/framework/hi.pak:data/data/com.android.chrome/app_chrome/paks/hi.pak \\
+    \$(LOCAL_PATH)/framework/hr.pak:data/data/com.android.chrome/app_chrome/paks/hr.pak \\
+    \$(LOCAL_PATH)/framework/hu.pak:data/data/com.android.chrome/app_chrome/paks/hu.pak \\
+    \$(LOCAL_PATH)/framework/id.pak:data/data/com.android.chrome/app_chrome/paks/id.pak \\
+    \$(LOCAL_PATH)/framework/it.pak:data/data/com.android.chrome/app_chrome/paks/it.pak \\
+    \$(LOCAL_PATH)/framework/ja.pak:data/data/com.android.chrome/app_chrome/paks/ja.pak \\
+    \$(LOCAL_PATH)/framework/kn.pak:data/data/com.android.chrome/app_chrome/paks/kn.pak \\
+    \$(LOCAL_PATH)/framework/ko.pak:data/data/com.android.chrome/app_chrome/paks/ko.pak \\
+    \$(LOCAL_PATH)/framework/lt.pak:data/data/com.android.chrome/app_chrome/paks/lt.pak \\
+    \$(LOCAL_PATH)/framework/lv.pak:data/data/com.android.chrome/app_chrome/paks/lv.pak \\
+    \$(LOCAL_PATH)/framework/ml.pak:data/data/com.android.chrome/app_chrome/paks/ml.pak \\
+    \$(LOCAL_PATH)/framework/mr.pak:data/data/com.android.chrome/app_chrome/paks/mr.pak \\
+    \$(LOCAL_PATH)/framework/ms.pak:data/data/com.android.chrome/app_chrome/paks/ms.pak \\
+    \$(LOCAL_PATH)/framework/nb.pak:data/data/com.android.chrome/app_chrome/paks/nb.pak \\
+    \$(LOCAL_PATH)/framework/nl.pak:data/data/com.android.chrome/app_chrome/paks/nl.pak \\
+    \$(LOCAL_PATH)/framework/pl.pak:data/data/com.android.chrome/app_chrome/paks/pl.pak \\
+    \$(LOCAL_PATH)/framework/pt-BR.pak:data/data/com.android.chrome/app_chrome/paks/pt-BR.pak \\
+    \$(LOCAL_PATH)/framework/pt-PT.pak:data/data/com.android.chrome/app_chrome/paks/pt-PT.pak \\
+    \$(LOCAL_PATH)/framework/ro.pak:data/data/com.android.chrome/app_chrome/paks/ro.pak \\
+    \$(LOCAL_PATH)/framework/ru.pak:data/data/com.android.chrome/app_chrome/paks/ru.pak \\
+    \$(LOCAL_PATH)/framework/sk.pak:data/data/com.android.chrome/app_chrome/paks/sk.pak \\
+    \$(LOCAL_PATH)/framework/sl.pak:data/data/com.android.chrome/app_chrome/paks/sl.pak \\
+    \$(LOCAL_PATH)/framework/sr.pak:data/data/com.android.chrome/app_chrome/paks/sr.pak \\
+    \$(LOCAL_PATH)/framework/sv.pak:data/data/com.android.chrome/app_chrome/paks/sv.pak \\
+    \$(LOCAL_PATH)/framework/sw.pak:data/data/com.android.chrome/app_chrome/paks/sw.pak \\
+    \$(LOCAL_PATH)/framework/ta.pak:data/data/com.android.chrome/app_chrome/paks/ta.pak \\
+    \$(LOCAL_PATH)/framework/te.pak:data/data/com.android.chrome/app_chrome/paks/te.pak \\
+    \$(LOCAL_PATH)/framework/th.pak:data/data/com.android.chrome/app_chrome/paks/th.pak \\
+    \$(LOCAL_PATH)/framework/tr.pak:data/data/com.android.chrome/app_chrome/paks/tr.pak \\
+    \$(LOCAL_PATH)/framework/uk.pak:data/data/com.android.chrome/app_chrome/paks/uk.pak \\
+    \$(LOCAL_PATH)/framework/vi.pak:data/data/com.android.chrome/app_chrome/paks/vi.pak \\
+    \$(LOCAL_PATH)/framework/webviewchromium.pak:data/data/com.android.chrome/app_chrome/paks/webviewchromium.pak \\
+    \$(LOCAL_PATH)/framework/zh-CN.pak:data/data/com.android.chrome/app_chrome/paks/zh-CN.pak \\
+    \$(LOCAL_PATH)/framework/zh-TW.pak:data/data/com.android.chrome/app_chrome/paks/zh-TW.pak \\
     \$(LOCAL_PATH)/lib/libwebviewchromium.so:system/lib/libwebviewchromium.so
 
 EOF
