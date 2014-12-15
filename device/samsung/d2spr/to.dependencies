@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_d2spr",
+    "remote": "to",
+    "repository": "platform_device_samsung_d2spr",
     "target_path": "device/samsung/d2spr",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
