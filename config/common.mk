@@ -202,12 +202,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #$(call inherit-product-if-exists, vendor/extra/product.mk)
 
-# Remove existing build.prop to allow versioning to work
-$(shell rm -rf $(OUT)/$(TO_BUILD)/system/build.prop)
-
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
 
-# Clean up old builds
-$(shell rm -rf $(OUT)/$(TO_BUILD)/OCT-L*.zip*)
-$(shell rm -rf $(OUT)/$(TO_BUILD)/to_*ota*.zip)
