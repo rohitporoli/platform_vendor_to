@@ -18,9 +18,9 @@
     "revision": "cm-12.0"
   },
   {
-    "remote": "cm",
+    "remote": "ad",
     "repository": "android_kernel_samsung_smdk4412",
-    "target_path": "kernel/samsung/smdk4412",
+    "target_path": "kernel/samsung/i9300",
     "revision": "cm-12.0"
   },
   {
