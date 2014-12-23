@@ -193,6 +193,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/to/overlay/common
 # by default, do not update the recovery with system updates
 PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
 
+# Include OctOS versioning
+include vendor/to/config/to_versioning.mk
+
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.to.display.version=$(TO_DISPLAY_VERSION)
 
@@ -201,7 +204,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 #-include vendor/cyngn/product.mk
 
 #$(call inherit-product-if-exists, vendor/extra/product.mk)
-
-# Include OctOS versioning
-include vendor/to/config/to_versioning.mk
-
