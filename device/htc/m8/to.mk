@@ -7,3 +7,4 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
 PRODUCT_NAME := to_m8
+TARGET_POWERHAL_VARIANT := cm
