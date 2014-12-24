@@ -6,6 +6,8 @@ $(call inherit-product, vendor/to/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
+$(call inherit-product, vendor/to/device/lge/g3-common/to.mk)
+
 PRODUCT_NAME := to_ls990
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
