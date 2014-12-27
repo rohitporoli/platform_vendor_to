@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_d2att",
-    "target_path": "device/samsung/d2att",
-    "revision": "cm-12.0"
+    "remote": "to",
+    "repository": "platform_device_samsung_d2bst",
+    "target_path": "device/samsung/d2bst",
+    "revision": "to-5.0"
   },
   {
     "remote": "to",
