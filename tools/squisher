@@ -128,6 +128,10 @@ echo -e "No changelog..."
 echo -e
 fi
 
+# Move OctPapers from /system to /data
+mkdir -p $REPACK/ota/data/app
+mv $REPACK/ota/system/app/OctPapers $REPACK/ota/data/app/
+
 # Pack it up and sign
 echo -e "Zipping package..."
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
