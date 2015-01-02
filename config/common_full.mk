@@ -14,9 +14,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/to/overlay/dictionaries
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
-    LiveWallpapers \
     LiveWallpapersPicker \
-    MagicSmokeWallpapers \
     NoiseField \
     PhaseBeam \
     VisualizationWallpapers \
