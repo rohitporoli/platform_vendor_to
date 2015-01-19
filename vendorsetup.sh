@@ -21,3 +21,5 @@ add_lunch_combo to_mako-userdebug
 add_lunch_combo to_shamu-userdebug
 add_lunch_combo to_t6vzw-userdebug
 add_lunch_combo to_m8-userdebug
+add_lunch_combo to_targa-userdebug
+add_lunch_combo to_maserati-userdebug
