@@ -10,7 +10,7 @@ if [ -z "$OUT_TARGET_HOST" ]
 then
    OUT_TARGET_HOST=linux-x86
    MD5=md5sum
-   XARGS="xargs --max-args=1 --max-procs `grep 'processor' /proc/cpuinfo|wc -l`"
+   XARGS="xargs --max-args=1 --max-procs $TO_OR"
    SED=sed
 else
    OUT_TARGET_HOST=darwin-x86
