@@ -36,13 +36,16 @@ fi
 
 mkdir -p $PREBUILT_DIR
 mkdir -p $PREBUILT_DIR/framework
+mkdir -p $PREBUILT_DIR/app
 mkdir -p $PREBUILT_DIR/lib
 
 if [ -d $TARGET_DIR ]; then
     echo "Copying files..."
+    cp -r $TARGET_DIR/system/app/webview $PREBUILT_DIR/app
     cp -r $TARGET_DIR/obj/APPS/webviewchromium-paks_intermediates/ $PREBUILT_DIR/framework/
     cp $TARGET_DIR/system/lib/libwebviewchromium.so $PREBUILT_DIR/lib/libwebviewchromium.so
-    cp $TARGET_DIR/../../common/obj/JAVA_LIBRARIES/android_webview_java_with_new_resources_intermediates/javalib.jar $PREBUILT_DIR/android_webview_java.jar
+    cp $TARGET_DIR/system/lib/libwebviewchromium_plat_support.so $PREBUILT_DIR/lib/libwebviewchromium_plat_support.so
+    cp $TARGET_DIR/system/lib/libwebviewchromium_loader.so $PREBUILT_DIR/lib/libwebviewchromium_loader.so
 else
     echo "Please ensure that you have ran a full build prior to running this script!"
     return 1;
@@ -125,7 +128,13 @@ PRODUCT_COPY_FILES += \\
     \$(LOCAL_PATH)/framework/webviewchromium.pak:data/data/com.android.chrome/app_chrome/paks/webviewchromium.pak \\
     \$(LOCAL_PATH)/framework/zh-CN.pak:data/data/com.android.chrome/app_chrome/paks/zh-CN.pak \\
     \$(LOCAL_PATH)/framework/zh-TW.pak:data/data/com.android.chrome/app_chrome/paks/zh-TW.pak \\
-    \$(LOCAL_PATH)/lib/libwebviewchromium.so:system/lib/libwebviewchromium.so
+    \$(LOCAL_PATH)/lib/libwebviewchromium.so:system/lib/libwebviewchromium.so \\
+    \$(LOCAL_PATH)/app/webview/webview.apk:system/app/webview/webview.apk \\
+    \$(LOCAL_PATH)/lib/libwebviewchromium_plat_support.so:system/lib/libwebviewchromium_plat_support.so \\
+    \$(LOCAL_PATH)/lib/libwebviewchromium_loader.so:system/lib/libwebviewchromium_loader.so
+
+    \$(shell mkdir -p out/target/product/__DEVICE__/system/app/webview/lib/arm/)
+    \$(shell cp -r \$(LOCAL_PATH)/app/webview/lib/arm/libwebviewchromium.so out/target/product/__DEVICE__/system/app/webview/lib/arm/libwebviewchromium.so)
 
 EOF
 
