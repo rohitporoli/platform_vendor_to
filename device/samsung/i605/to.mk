@@ -8,6 +8,9 @@ TARGET_SCREEN_WIDTH := 720
 # Inherit some common TO stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
+# Inherit some t0lte over-rides
+$(call inherit-product, vendor/to/device/samsung/t0lte/to.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/i605/full_i605.mk)
 
