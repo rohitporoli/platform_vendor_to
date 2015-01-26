@@ -32,6 +32,11 @@ else
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
 endif
 
+# PreBuilt Chromium
+ifeq ($(USE_PREBUILT_CHROMIUM),1)
+-include prebuilts/chromium/$(TO_BUILD)/chromium_prebuilt.mk
+endif
+
 # Copy over the changelog to the device
 #PRODUCT_COPY_FILES += \
 #    vendor/to/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt

@@ -42,7 +42,7 @@ mkdir -p $PREBUILT_DIR/lib
 if [ -d $TARGET_DIR ]; then
     echo "Copying files..."
     cp -r $TARGET_DIR/system/app/webview $PREBUILT_DIR/app
-    cp -r $TARGET_DIR/obj/APPS/webviewchromium-paks_intermediates/ $PREBUILT_DIR/framework/
+    cp -r $TARGET_DIR/obj/APPS/webviewchromium-paks_intermediates/* $PREBUILT_DIR/framework/
     cp $TARGET_DIR/system/lib/libwebviewchromium.so $PREBUILT_DIR/lib/libwebviewchromium.so
     cp $TARGET_DIR/system/lib/libwebviewchromium_plat_support.so $PREBUILT_DIR/lib/libwebviewchromium_plat_support.so
     cp $TARGET_DIR/system/lib/libwebviewchromium_loader.so $PREBUILT_DIR/lib/libwebviewchromium_loader.so
