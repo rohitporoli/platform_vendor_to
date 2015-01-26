@@ -12,6 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# PreBuilt Chromium
+ifeq ($(USE_PREBUILT_CHROMIUM),1)
+-include prebuilts/chromium/$(TO_BUILD)/chromium_prebuilt.mk
+endif
+
 # Main Required Packages
 PRODUCT_PACKAGES += \
     LatinIME \
