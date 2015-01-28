@@ -1,9 +1,6 @@
 # Inherit common TO stuff
 $(call inherit-product, vendor/to/config/common.mk)
 
-# Bring in all video files
-$(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
-
 # Include TO audio files
 #include vendor/to/config/audio.mk
 
@@ -22,16 +19,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     PhotoPhase
 
-PRODUCT_PACKAGES += \
-    VideoEditor \
-    libvideoeditor_jni \
-    libvideoeditor_core \
-    libvideoeditor_osal \
-    libvideoeditor_videofilters \
-    libvideoeditorplayer
-
 # Extra tools in TO
 PRODUCT_PACKAGES += \
     vim \
-    zip \
-    unrar
+    zip
