@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_i605",
+    "remote": "to",
+    "repository": "platform_device_samsung_i605",
     "target_path": "device/samsung/i605",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
@@ -18,10 +18,10 @@
     "revision": "cm-12.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_t0lte",
+    "remote": "to",
+    "repository": "platform_device_samsung_t0lte",
     "target_path": "device/samsung/t0lte",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
