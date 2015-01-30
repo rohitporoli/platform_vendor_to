@@ -20,6 +20,7 @@ add_lunch_combo to_ls990-userdebug
 add_lunch_combo to_vs985-userdebug
 add_lunch_combo to_mako-userdebug
 add_lunch_combo to_shamu-userdebug
+add_lunch_combo to_t0ltetmo-userdebug
 add_lunch_combo to_t6vzw-userdebug
 add_lunch_combo to_m8-userdebug
 add_lunch_combo to_targa-userdebug
