@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_serranolteusc",
+    "remote": "to",
+    "repository": "platform_device_samsung_serranolteusc",
     "target_path": "device/samsung/serranolteusc",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
@@ -39,6 +39,12 @@
     "remote": "cm",
     "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung",
+    "revision": "cm-12.0"
+  },
+  {
+    "remote": "tm",
+    "repository": "proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
     "revision": "cm-12.0"
   },
   {
