@@ -6,10 +6,10 @@
     "revision": "to-5.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_device_samsung_smdk4412-common",
+    "remote": "to",
+    "repository": "platform_device_samsung_smdk4412-common",
     "target_path": "device/samsung/smdk4412-common",
-    "revision": "cm-12.0"
+    "revision": "to-5.0"
   },
   {
     "remote": "cm",
