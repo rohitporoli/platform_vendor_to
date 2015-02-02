@@ -97,6 +97,10 @@ PRODUCT_PACKAGES += \
     LatinIME \
     BluetoothExt
 
+# Proprietary latinime lib needed for Keyboard swyping
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 # Optional TO packages
 PRODUCT_PACKAGES += \
     VoicePlus \
