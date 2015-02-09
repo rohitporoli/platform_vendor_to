@@ -1,6 +1,10 @@
 # Release name
 PRODUCT_RELEASE_NAME := Nexus7
 
+# Custom toolchains
+override TARGET_GCC_VERSION_AND := 4.8-sm
+override TARGET_GCC_VERSION_ARM := 4.9-sm
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
