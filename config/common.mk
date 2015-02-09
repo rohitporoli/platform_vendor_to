@@ -1,5 +1,9 @@
 PRODUCT_BRAND ?= teamoctos
 
+# Default toolchains
+TARGET_GCC_VERSION_AND := 4.8
+TARGET_GCC_VERSION_ARM := 4.8
+
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
