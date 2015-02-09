@@ -1,6 +1,10 @@
 # t0lte over-ride
 TARGET_POWERHAL_VARIANT := cm
 
+# Custom toolchains
+TARGET_GCC_VERSION_AND := 4.8-sm
+TARGET_GCC_VERSION_ARM := 4.9-sm
+
 # GPS fix
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/lib/libgps.utils.so:system/lib/libgps.utils.so \
