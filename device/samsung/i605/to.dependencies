@@ -43,6 +43,12 @@
   },
   {
     "remote": "to",
+    "repository": "platform_vendor_samsung_smdk4412-common-note2",
+    "target_path": "vendor/samsung/smdk4412-common",
+    "revision": "to-5.0"
+  },
+  {
+    "remote": "to",
     "repository": "platform_hardware_samsung",
     "target_path": "hardware/samsung",
     "revision": "to-5.0"

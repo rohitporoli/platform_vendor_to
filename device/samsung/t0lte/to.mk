@@ -15,3 +15,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
     $(LOCAL_PATH)/rootdir/lib/libloc_eng.so:system/lib/libloc_eng.so \
     $(LOCAL_PATH)/rootdir/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+
+# Remove obsolete drm files
+TARGET_COPY_FILES_OVERRIDES := \
+    system/vendor/lib/libwvdrm_L1.so \
+    system/vendor/lib/libWVStreamControlAPI_L1.so
