@@ -12,8 +12,8 @@
     "revision": "cm-12.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_kernel_motorola_omap4-common",
+    "remote": "gh",
+    "repository": "Oggie7797/android_kernel_motorola_omap4-common",
     "target_path": "kernel/motorola/omap4-common",
     "revision": "cm-12.0"
   },
