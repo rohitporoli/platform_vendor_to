@@ -1,22 +1,28 @@
-# t0lte over-ride
-TARGET_POWERHAL_VARIANT := cm
+# Release name
+PRODUCT_RELEASE_NAME := t0lte
 
-# Custom toolchains
-TARGET_GCC_VERSION_AND := 4.8-sm
-TARGET_GCC_VERSION_ARM := 4.9-sm
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
-#Enable LIQUIFY OPTIMIZATIONS V1
-LIQUIFY := TRUE
+# Inherit some common TO stuff.
+$(call inherit-product, vendor/to/config/common_full_phone.mk)
 
-# GPS fix
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/lib/libgps.utils.so:system/lib/libgps.utils.so \
-    $(LOCAL_PATH)/rootdir/lib/libloc_adapter.so:system/lib/libloc_adapter.so \
-    $(LOCAL_PATH)/rootdir/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
-    $(LOCAL_PATH)/rootdir/lib/libloc_eng.so:system/lib/libloc_eng.so \
-    $(LOCAL_PATH)/rootdir/lib/hw/gps.default.so:system/lib/hw/gps.default.so
+# Inherit some t0lte-common over-rides
+$(call inherit-product, vendor/to/device/samsung/t0lte-common/to.mk)
 
-# Remove obsolete drm files
-TARGET_COPY_FILES_OVERRIDES := \
-    system/vendor/lib/libwvdrm_L1.so \
-    system/vendor/lib/libWVStreamControlAPI_L1.so
+# Inherit device configuration
+$(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/to/config/nfc_enhanced.mk)
+
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := t0lte
+PRODUCT_NAME := to_t0lte
+PRODUCT_BRAND := samsung
+PRODUCT_MODEL := GT-N7105
+PRODUCT_MANUFACTURER := samsung
+
+# Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t0lte TARGET_DEVICE=t0lte BUILD_FINGERPRINT="samsung/t0ltexx/t0lte:4.1.2/JZO54K/N7105XXDLL4:user/release-keys" PRIVATE_BUILD_DESC="t0ltexx-user 4.1.2 JZO54K N7105XXDLL4 release-keys"
