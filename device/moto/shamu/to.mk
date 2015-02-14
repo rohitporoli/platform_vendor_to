@@ -4,7 +4,7 @@ TARGET_SCREEN_WIDTH := 2560
 
 # Custom toolchains
 override TARGET_GCC_VERSION_AND := 4.8-sm
-override TARGET_GCC_VERSION_ARM := 4.9-sm
+# override TARGET_GCC_VERSION_ARM := 4.8-sm
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
