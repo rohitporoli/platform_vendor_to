@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 2560
 
 # Custom toolchains
-override TARGET_GCC_VERSION_AND := 4.8-sm
+# override TARGET_GCC_VERSION_AND := 4.8-sm
 # override TARGET_GCC_VERSION_ARM := 4.8-sm
 
 # Inherit some common CM stuff.
@@ -29,4 +29,4 @@ PRODUCT_PACKAGES += Torch
 
 TARGET_POWERHAL_VARIANT := cm 
 
-LIQUIFY := TRUE
+LIQUIFY := FALSE

@@ -3,8 +3,8 @@ TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 768
 
 # Custom toolchains
-override TARGET_GCC_VERSION_AND := 4.8-sm
-override TARGET_GCC_VERSION_ARM := 4.9-sm
+# override TARGET_GCC_VERSION_AND := 4.8-sm
+# override TARGET_GCC_VERSION_ARM := 4.9-sm
 
 # Inherit some common TO stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
@@ -27,4 +27,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occa
 # Enable Torch
 PRODUCT_PACKAGES += Torch
 
-LIQUIFY := TRUE
+LIQUIFY := FALSE

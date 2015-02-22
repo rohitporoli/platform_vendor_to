@@ -2,11 +2,11 @@ LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Custom toolchains
-TARGET_GCC_VERSION_AND := 4.8-sm
-TARGET_GCC_VERSION_ARM := 4.9-sm
+# TARGET_GCC_VERSION_AND := 4.8-sm
+# TARGET_GCC_VERSION_ARM := 4.9-sm
 
 #Enable LIQUIFY OPTIMIZATIONS V1
-LIQUIFY := TRUE
+LIQUIFY := FALSE
 
 # Remove inilogo.rle from PRODUCT_COPY_FILES
 TARGET_COPY_FILES_OVERRIDES := \
