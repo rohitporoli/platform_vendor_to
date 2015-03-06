@@ -130,10 +130,6 @@ PRODUCT_PACKAGES += \
     OctPhase \
     OctSun
 
-# Team-OctOS themes
-PRODUCT_PACKAGES += \
-    OctInkDark
-
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
