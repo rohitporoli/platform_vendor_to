@@ -134,6 +134,7 @@ mkdir -p $REPACK/ota/data/app
 mv $REPACK/ota/system/app/OctPapers $REPACK/ota/data/app/
 mv $REPACK/ota/system/app/OctPhase $REPACK/ota/data/app/
 mv $REPACK/ota/system/app/OctSun $REPACK/ota/data/app/
+mv $REPACK/ota/system/app/OctInkDark $REPACK/ota/data/app/
 
 # Pack it up and sign
 echo -e "Zipping package..."
