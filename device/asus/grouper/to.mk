@@ -2,11 +2,11 @@
 PRODUCT_RELEASE_NAME := Nexus7
 
 # Custom toolchains
-override TARGET_GCC_VERSION_AND := 4.8-sm
-override TARGET_GCC_VERSION_ARM := 4.9-sm
+#override TARGET_GCC_VERSION_AND := 4.8-sm
+#override TARGET_GCC_VERSION_ARM := 4.9-sm
 
 #Enable LIQUIFY OPTIMIZATIONS V1
-LIQUIFY := TRUE
+LIQUIFY := FALSE
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
