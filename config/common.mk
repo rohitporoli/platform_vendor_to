@@ -110,7 +110,6 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     Basic \
     libemoji \
-    OmniSwitch \
     Terminal
 
 # Custom CM packages
