@@ -15,6 +15,6 @@
       "remote":      "tm",
       "repository":  "proprietary_vendor_lge",
       "target_path": "vendor/lge",
-      "revision":    "cm-12.1"
+      "revision":    "cm-12.0"
     }
 ]
