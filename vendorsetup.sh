@@ -1,3 +1,8 @@
+add_lunch_combo to_d2att-userdebug
+add_lunch_combo to_d2bst-userdebug
+add_lunch_combo to_d2spr-userdebug
+add_lunch_combo to_d2vzw-userdebug
+add_lunch_combo to_d2tmo-userdebug
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_grouper-userdebug
 add_lunch_combo to_hammerhead-userdebug
