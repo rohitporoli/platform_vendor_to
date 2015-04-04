@@ -3,19 +3,19 @@
       "remote":      "cm",
       "repository":  "android_device_moto_shamu",
       "target_path": "device/moto/shamu",
-      "revision":    "staging/cm-12.1"
+      "revision":    "cm-12.1"
     },
     {
       "remote":      "cm",
       "repository":  "android_device_qcom_common",
       "target_path": "device/qcom/common",
-      "revision":    "staging/cm-12.1"
+      "revision":    "cm-12.1"
     },
     {
       "remote":      "cm",
       "repository":  "android_kernel_moto_shamu",
       "target_path": "kernel/moto/shamu",
-      "revision":    "staging/cm-12.1"
+      "revision":    "cm-12.1"
     },
     {
       "remote":      "tm",

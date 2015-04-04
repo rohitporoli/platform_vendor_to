@@ -3,19 +3,19 @@
    "remote": "cm",
    "repository": "android_device_asus_flo",
    "target_path": "device/asus/flo",
-   "revision": "staging/cm-12.1"
+   "revision": "cm-12.1"
  },
  {
    "remote": "aosp",
    "repository": "device/asus/flo-kernel",
    "target_path": "device/asus/flo-kernel",
-   "revision": "refs/tags/android-5.0.2_r1"
+   "revision": "refs/tags/android-5.1.0_r3"
  },
  {
    "remote": "cm",
    "repository": "android_kernel_google_msm",
    "target_path": "kernel/google/msm",
-   "revision": "staging/cm-12.1"
+   "revision": "cm-12.1"
  },
  {
    "remote": "tm",

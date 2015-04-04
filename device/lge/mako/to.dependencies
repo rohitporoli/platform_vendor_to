@@ -3,18 +3,18 @@
       "remote":      "cm",
       "repository":  "android_device_lge_mako",
       "target_path": "device/lge/mako",
-      "revision":    "staging/cm-12.1"
+      "revision":    "cm-12.1"
     },
     {
       "remote":      "cm",
       "repository":  "android_kernel_google_msm",
       "target_path": "kernel/google/msm",
-      "revision":    "staging/cm-12.1"
+      "revision":    "cm-12.1"
     },
     {
       "remote":      "tm",
       "repository":  "proprietary_vendor_lge",
       "target_path": "vendor/lge",
-      "revision":    "cm-12.0"
+      "revision":    "cm-12.1"
     }
 ]
