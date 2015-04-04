@@ -1,3 +1,6 @@
+LOCAL_PATH := $(call my-dir)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 2560
@@ -14,6 +17,14 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
+
+# Remove fstab.shamu from PRODUCT_COPY_FILES
+TARGET_COPY_FILES_OVERRIDES := \
+    root/fstab.shamu
+
+# Add fstab.shamu as a module
+PRODUCT_PACKAGES += \
+    fstab.shamu
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := shamu
