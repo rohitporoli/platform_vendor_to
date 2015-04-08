@@ -6,6 +6,10 @@ add_lunch_combo to_d2tmo-userdebug
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_grouper-userdebug
 add_lunch_combo to_hammerhead-userdebug
+add_lunch_combo to_hlte-userdebug
+add_lunch_combo to_hltespr-userdebug
+add_lunch_combo to_hltetmo-userdebug
+add_lunch_combo to_i605-userdebug
 add_lunch_combo to_jflteatt-userdebug
 add_lunch_combo to_jfltespr-userdebug
 add_lunch_combo to_jfltetmo-userdebug

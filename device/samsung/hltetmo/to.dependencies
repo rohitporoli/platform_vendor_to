@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_hltetmo",
+    "target_path": "device/samsung/hltetmo",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_hlte-common",
+    "target_path": "device/samsung/hlte-common",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_msm8974-common",
+    "target_path": "device/samsung/msm8974-common",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_kernel_samsung_hlte",
+    "target_path": "kernel/samsung/hlte",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "tm",
+    "repository": "proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "cm-12.1"
+  }
+]
