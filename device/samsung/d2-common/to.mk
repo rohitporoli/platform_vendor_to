@@ -8,6 +8,9 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 #Enable LIQUIFY OPTIMIZATIONS V1
 LIQUIFY := FALSE
 
+# Camera
+TARGET_NEED_D2_CAMERA_HAX := true
+
 # Remove inilogo.rle from PRODUCT_COPY_FILES
 TARGET_COPY_FILES_OVERRIDES := \
     root/initlogo.rle
