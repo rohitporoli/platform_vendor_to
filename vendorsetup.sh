@@ -25,4 +25,6 @@ add_lunch_combo to_shamu-userdebug
 add_lunch_combo to_t0lte-userdebug
 add_lunch_combo to_t0lteatt-userdebug
 add_lunch_combo to_t0ltetmo-userdebug
+add_lunch_combo to_trltetmo-userdebug
+add_lunch_combo to_us990-userdebug
 add_lunch_combo to_vs985-userdebug
