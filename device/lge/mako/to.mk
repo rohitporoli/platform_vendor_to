@@ -12,6 +12,9 @@ $(call inherit-product, vendor/to/config/common_full_phone.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
+## overlays
+DEVICE_PACKAGE_OVERLAYS += vendor/to/device/lge/mako/overlay
+
 # Inherit device configuration
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
