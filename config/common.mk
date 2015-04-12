@@ -124,6 +124,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Team-OctOS packages
 PRODUCT_PACKAGES += \
+    AboutOctOs \
     BlueBalls \
     OctPapers \
     OctPhase \
