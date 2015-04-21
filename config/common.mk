@@ -99,7 +99,8 @@ include vendor/to/config/themes_common.mk
 PRODUCT_PACKAGES += \
     Development \
     LatinIME \
-    BluetoothExt
+    BluetoothExt \
+    Profiles
 
 # Proprietary latinime lib needed for Keyboard swyping
 PRODUCT_COPY_FILES += \
