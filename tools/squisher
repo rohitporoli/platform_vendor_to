@@ -129,11 +129,8 @@ echo -e
 fi
 
 # Move some packages from /system to /data to save
-# space on /system and make them easier to uninstall
+# space on /system
 mkdir -p $REPACK/ota/data/app
-mv $REPACK/ota/system/app/OctPapers $REPACK/ota/data/app/
-mv $REPACK/ota/system/app/OctPhase $REPACK/ota/data/app/
-mv $REPACK/ota/system/app/OctSun $REPACK/ota/data/app/
 mv $REPACK/ota/system/app/OctInkDark $REPACK/ota/data/app/
 
 # Pack it up and sign

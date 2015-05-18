@@ -127,10 +127,7 @@ PRODUCT_PACKAGES += \
 # Custom Team-OctOS packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
-    BlueBalls \
-    OctPapers \
-    OctPhase \
-    OctSun
+    BlueBalls
 
 # Team-OctOS themes
 PRODUCT_PACKAGES += \
