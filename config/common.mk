@@ -129,10 +129,6 @@ PRODUCT_PACKAGES += \
     AboutOctOs \
     BlueBalls
 
-# Team-OctOS themes
-PRODUCT_PACKAGES += \
-    OctInkDark
-
 # CM Platform Library
 PRODUCT_PACKAGES += \
     org.cyanogenmod.platform-res \
