@@ -1,7 +1,6 @@
 #!/bin/bash
 #
-# Squish a CM otapackage for distribution
-# cyanogen
+# Team Octos release tools
 #
 . $ANDROID_BUILD_TOP/vendor/to/tools/functions
 
@@ -24,12 +23,7 @@ if [ -z "$OUT" -o ! -d "$OUT" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/to/tools/opticharger
 QUIET=-q
-DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
-DELETE_LIBS="libc_malloc_debug_leak.so libc_malloc_debug_qemu.so"
-DELETE_FONTS="MTLmr3m.ttf"
-DELETE_MEDIA="*.qmg"
 
 REPACK=$OUT/repack.d
 echo -e "Sanitizing Environment..."
@@ -47,23 +41,6 @@ echo -e
 
 #add SuperSu
 cp -r $OUT/supersu $REPACK/ota/
-
-# Move all apks to the same directory so xargs can
-# use also with framework-res.apk. This allow process
-# framework-res.apk in parallel with other apks
-mkdir -p $REPACK/parallel
-cd $REPACK/parallel
-
-find $REPACK/ota/system -name '*.apk' | while read APK; do
-    ln -s $APK .
-done
-
-# Do optimization in parallel
-find ./ -name \*.apk | $XARGS $OPTICHARGER
-
-# Return to directory
-cd $REPACK/ota
-rm -rf $REPACK/parallel
 )
 
 # Fix build.prop
@@ -83,41 +60,6 @@ TARGET_PRODUCT_FINAL=`echo -e $TARGET_PRODUCT | cut -d '_' -f2`
 fi
 echo -e $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
 OUTFILE=$OUT/$MODVERSION-$TARGET_PRODUCT_FINAL.zip
-
-# Delete unnecessary binaries
-( cd $REPACK/ota/system/bin; echo -e $DELETE_BINS | xargs rm -f; )
-
-# Delete unnecessary libraries
-( cd $REPACK/ota/system/lib; echo -e $DELETE_LIBS | xargs rm -f; )
-
-# Delete Offline charging mode files
-( cd $REPACK/ota/system/media; echo -e $DELETE_MEDIA | xargs rm -f; )
-
-if [ "$TARGET_PRODUCT_FINAL" != "infuse4g" ]
-then
-# No need for modem.bin
-rm -f $REPACK/ota/modem.bin
-fi
-
-# No need for media/video
-rm -rf $REPACK/ota/system/media/video
-
-# Delete Unnecessary Fonts
-( cd $REPACK/ota/system/fonts; echo -e $DELETE_FONTS | xargs rm -f; )
-
-# No need for tts
-rm -rf $REPACK/ota/system/tts
-
-# No need for srec
-rm -rf $REPACK/ota/system/usr/srec
-
-# No need for recovery
-rm -rf $REPACK/ota/recovery
-rm -rf $REPACK/ota/system/etc/recovery-resource.dat
-
-# Strip modules
-[ -d $REPACK/ota/system/lib/modules ] && \
-	find $REPACK/ota/system/lib/modules -name "*.ko" -print0 | xargs -0 arm-eabi-strip --strip-unneeded
 
 if [ "$TO_CHANGELOG" = true ]
 then
