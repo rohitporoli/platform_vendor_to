@@ -13,7 +13,7 @@ ifndef TO_BUILDTYPE
     endif
 endif
 
-# Filter out random types, so it'll reset to UNOFFICIAL
+# Filter out random types, so it'll reset to COMMUNITY
 ifeq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(TO_BUILDTYPE)),)
     TO_BUILDTYPE :=
 endif
@@ -40,14 +40,14 @@ ifdef TO_BUILDTYPE
         endif
     endif
 else
-    # If TO_BUILDTYPE is not defined, set to UNOFFICIAL
-    TO_BUILDTYPE := UNOFFICIAL
+    # If TO_BUILDTYPE is not defined, set to COMMUNITY
+    TO_BUILDTYPE := COMMUNITY
     TO_EXTRAVERSION :=
 endif
 
-ifeq ($(TO_BUILDTYPE), UNOFFICIAL)
-    ifneq ($(TARGET_UNOFFICIAL_BUILD_ID),)
-        TO_EXTRAVERSION := -$(TARGET_UNOFFICIAL_BUILD_ID)
+ifeq ($(TO_BUILDTYPE), COMMUNITY)
+    ifneq ($(TARGET_COMMUNITY_BUILD_ID),)
+        TO_EXTRAVERSION := -$(TARGET_COMMUNITY_BUILD_ID)
     endif
 endif
 
@@ -85,7 +85,7 @@ TO_DISPLAY_VERSION := $(TO_VERSION)
 
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),)
 ifneq ($(PRODUCT_DEFAULT_DEV_CERTIFICATE),build/target/product/security/testkey)
-  ifneq ($(TO_BUILDTYPE), UNOFFICIAL)
+  ifneq ($(TO_BUILDTYPE), COMMUNITY)
     ifndef TARGET_VENDOR_RELEASE_BUILD_ID
       ifneq ($(TO_EXTRAVERSION),)
         # Remove leading dash from TO_EXTRAVERSION
