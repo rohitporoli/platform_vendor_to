@@ -1,6 +1,11 @@
 # t0lte over-ride
 TARGET_POWERHAL_VARIANT := cm
 
+# Team OctOs device maintainer info
+ifneq (COMMUNITY, $(TO_BUILDTYPE))
+DEVICE_PACKAGE_OVERLAYS += vendor/to/device/samsung/t0lte-common/maintainer
+endif
+
 # Custom toolchains
 # TARGET_GCC_VERSION_AND := 4.8-sm
 # TARGET_GCC_VERSION_ARM := 4.9-sm
