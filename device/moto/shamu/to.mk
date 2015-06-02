@@ -1,6 +1,11 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Team OctOs device maintainer info
+ifneq (COMMUNITY, $(TO_BUILDTYPE))
+DEVICE_PACKAGE_OVERLAYS += vendor/to/device/moto/shamu/maintainer
+endif
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1440
 TARGET_SCREEN_WIDTH := 2560
