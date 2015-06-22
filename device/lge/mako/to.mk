@@ -1,3 +1,8 @@
+# Team OctOs device maintainer info
+ifneq (COMMUNITY, $(TO_BUILDTYPE))
+DEVICE_PACKAGE_OVERLAYS += vendor/to/device/lge/mako/maintainer
+endif
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 768

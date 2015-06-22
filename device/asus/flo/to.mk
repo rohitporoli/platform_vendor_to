@@ -1,3 +1,7 @@
+# Team OctOs device maintainer info
+ifneq (COMMUNITY, $(TO_BUILDTYPE))
+DEVICE_PACKAGE_OVERLAYS += vendor/to/device/asus/flo/maintainer
+endif
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
