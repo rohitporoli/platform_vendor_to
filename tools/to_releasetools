@@ -41,6 +41,9 @@ echo -e
 
 #add SuperSu
 cp -r $OUT/supersu $REPACK/ota/
+
+#add aroma and other install scripts if required by the device
+cp -r $OUT/octotools/* $REPACK/ota/
 )
 
 # Fix build.prop

@@ -1,0 +1,15 @@
+<b><#selectbg_g>TERMS AND CONDITIONS FOR USE</#></b></@>
+
+<b><#selectbg_g>General Notice:</#></b>
+
+<@fill><q>	On the Verizon Galaxy S 4, v2.5.0.2 and v2.7.1.0 are considered as the most stable versions of TWRP available.  Try the other versions if you like, choice is the spice of life.</q></@>
+
+<@fill><q>	<b><i>NOTICE:</i></b>  Backups generated in one version may or may not work in another.</q></@>
+
+<b><#selectbg_g>Disclaimer:</#></b>
+
+<@fill><q>	We are not responsible for anything that <i>may</i> happen, or happens, to your phone as a result of this installer. You are choosing to install this yourself, and thus assume any/all risks involved.</q></@>
+
+<b><#selectbg_g>Notice:</#></b>
+
+<@fill><q>	While this installer was created by Team OctOS, the recovery you are about to install was not. All issues with the recovery itself should be directed to the TWRP team.  Please do not distribute or post this installer without our permission. It's rude and in violation of XDA rules. We won't tolerate it and neither will they! You have been <b><i>WARNED</i></b>!!</q></@>
