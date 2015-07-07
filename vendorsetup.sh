@@ -1,5 +1,4 @@
 add_lunch_combo to_d2att-userdebug
-add_lunch_combo to_d2bst-userdebug
 add_lunch_combo to_d2refreshspr-userdebug
 add_lunch_combo to_d2spr-userdebug
 add_lunch_combo to_d2tmo-userdebug
