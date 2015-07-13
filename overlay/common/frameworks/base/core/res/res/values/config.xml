@@ -70,4 +70,10 @@
         <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
     </string-array>
+
+    <!-- Default, comma-delimited, quick settings tiles. See QSConstants.java for a list of all available tiles -->
+    <string name="config_defaultQuickSettingsTiles" translatable="false">
+        wifi,bt,tentacles,cell,airplane,rotation,flashlight,location
+    </string>
+
 </resources>
