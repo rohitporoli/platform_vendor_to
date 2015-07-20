@@ -1,6 +1,8 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+override KERNEL_DECONFIG := octos_d2_defconfig
+
 $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 # Inherit device common stuff specific to TO
