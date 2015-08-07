@@ -70,6 +70,7 @@
         <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
         <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
         <item>org.cyanogenmod.platform.internal.SettingsManagerService</item>
+        <item>org.cyanogenmod.platform.internal.CMTelephonyManagerService</item>
     </string-array>
 
     <!-- Default, comma-delimited, quick settings tiles. See QSConstants.java for a list of all available tiles -->
