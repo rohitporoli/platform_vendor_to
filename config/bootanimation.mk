@@ -1,35 +1,32 @@
-# Copyright (C) 2015 The Pure Nexus Project
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#      http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
+ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
+# determine the smaller dimension
+TARGET_BOOTANIMATION_SIZE := $(shell \
+  if [ $(TARGET_SCREEN_WIDTH) -lt $(TARGET_SCREEN_HEIGHT) ]; then \
+    echo $(TARGET_SCREEN_WIDTH); \
+  else \
+    echo $(TARGET_SCREEN_HEIGHT); \
+  fi )
 
-# Add Stock Lollipop bootanimation based on device
-ifneq ($(filter nexus_hammerhead,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/bootanimation/hammerhead.zip:system/media/bootanimation.zip
+# get a sorted list of the sizes
+bootanimation_sizes := $(subst .zip,, $(shell ls vendor/to/prebuilt/bootanimation))
+bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_sizes)) | sort -rn)
+
+# find the appropriate size and set
+define check_and_set_bootanimation
+$(eval TARGET_BOOTANIMATION_NAME := $(shell \
+  if [ -z "$(TARGET_BOOTANIMATION_NAME)" ]; then
+    if [ $(1) -le $(TARGET_BOOTANIMATION_SIZE) ]; then \
+      echo $(1); \
+      exit 0; \
+    fi;
+  fi;
+  echo $(TARGET_BOOTANIMATION_NAME); ))
+endef
+$(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
+
+ifeq ($(TARGET_BOOTANIMATION_HALF_RES),true)
+PRODUCT_BOOTANIMATION := vendor/to/prebuilt/bootanimation/halfres/$(TARGET_BOOTANIMATION_NAME).zip
+else
+PRODUCT_BOOTANIMATION := vendor/to/prebuilt/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
 endif
-ifneq ($(filter nexus_mako,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/bootanimation/mako.zip:system/media/bootanimation.zip
-endif
-ifneq ($(filter nexus_flo,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/bootanimation/flo.zip:system/media/bootanimation.zip
-endif
-ifneq ($(filter aosp_shamu,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/bootanimation/shamu.zip:system/media/bootanimation.zip
-endif
-ifneq ($(filter nexus_flounder,$(TARGET_PRODUCT)),)
-    PRODUCT_COPY_FILES += \
-        vendor/to/prebuilt/bootanimation/flounder.zip:system/media/bootanimation.zip
 endif
