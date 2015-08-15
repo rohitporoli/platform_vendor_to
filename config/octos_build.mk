@@ -40,8 +40,8 @@ PRODUCT_PACKAGES += \
 #    LayersManager
 
 # Busybox
-#PRODUCT_PACKAGES += \
-#    Busybox
+PRODUCT_PACKAGES += \
+    Busybox
 
 # SuperSU
 PRODUCT_COPY_FILES += \
