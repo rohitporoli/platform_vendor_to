@@ -32,12 +32,12 @@ PRODUCT_PACKAGES += \
 #    WallpaperPicker
 
 # Hide layers manager from launcher
-#PRODUCT_PROPERTY_OVERRIDES += \
-#    ro.layers.noIcon=noIcon
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.layers.noIcon=noIcon
 
 # Add layers manager app to build
-#PRODUCT_PACKAGES += \
-#    LayersManager
+PRODUCT_PACKAGES += \
+    LayersManager
 
 # Busybox
 PRODUCT_PACKAGES += \
