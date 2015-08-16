@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +16,12 @@
 PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
-    libemoji 
+    libemoji
+
+# OctOs Packages
+PRODUCT_PACKAGES += \
+    AboutOctOs \
+    BlueBalls
 
 # Cyanogen LockClock
 #PRODUCT_PACKAGES += \
