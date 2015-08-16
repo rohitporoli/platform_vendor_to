@@ -1,8 +1,8 @@
 # Include Pure Nexus common configuration
-include vendor/to/config/main.mk
+#include vendor/to/config/main.mk
 
 # Include Pure Nexus telephony configuration
-include vendor/to/config/telephony.mk
+#include vendor/to/config/telephony.mk
 
 # Inherit device configuration
 $(call inherit-product, device/moto/shamu/aosp_shamu.mk)
