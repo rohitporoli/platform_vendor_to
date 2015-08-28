@@ -1,0 +1,20 @@
+[
+    {
+      "remote":      "to",
+      "repository":  "platform_device_moto_shamu",
+      "target_path": "device/moto/shamu",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "aosp",
+      "repository":  "device/moto/shamu-kernel",
+      "target_path": "device/moto/shamu-kernel",
+      "revision":    "refs/tags/android-5.1.1_r13"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_motorola_shamu",
+      "target_path": "vendor/motorola/shamu",
+      "revision":    "to-5.1-aosp"
+    }
+]

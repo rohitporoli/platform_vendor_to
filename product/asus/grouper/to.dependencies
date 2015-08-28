@@ -1,0 +1,50 @@
+[
+    {
+      "remote":      "to",
+      "repository":  "platform_device_asus_grouper",
+      "target_path": "device/asus/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_asus_grouper",
+      "target_path": "vendor/asus/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_broadcom_grouper",
+      "target_path": "vendor/broadcom/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_elan_grouper",
+      "target_path": "vendor/elan/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_invensense_grouper",
+      "target_path": "vendor/invensense/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_nvidia_grouper",
+      "target_path": "vendor/nvidia/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_nxp_grouper",
+      "target_path": "vendor/nxp/grouper",
+      "revision":    "to-5.1-aosp"
+    },
+    {
+      "remote":      "to",
+      "repository":  "proprietary_vendor_widevine_grouper",
+      "target_path": "vendor/widevine/grouper",
+      "revision":    "to-5.1-aosp"
+    }
+]
