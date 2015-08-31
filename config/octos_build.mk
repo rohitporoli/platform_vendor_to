@@ -26,20 +26,8 @@ PRODUCT_PACKAGES += \
 # OctOs Packages
 PRODUCT_PACKAGES += \
     AboutOctOs \
-    BlueBalls
-
-# Cyanogen LockClock
-#PRODUCT_PACKAGES += \
-#    LockClock
-
-# Screen recorder package and lib
-#PRODUCT_PACKAGES += \
-#    ScreenRecorder \
-#    libscreenrecorder
-
-# Keyboard Wallpaper Picker
-#PRODUCT_PACKAGES += \
-#    WallpaperPicker
+    BlueBalls \
+    LockClock
 
 # Hide layers manager from launcher
 PRODUCT_PROPERTY_OVERRIDES += \
