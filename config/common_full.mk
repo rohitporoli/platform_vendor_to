@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
     VisualizationWallpapers \
     PhotoTable \
     SoundRecorder \
-    PhotoPhase
+    PhotoPhase \
+    CMSettingsProvider
 
 # Extra tools in TO
 PRODUCT_PACKAGES += \
