@@ -1,6 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Do not use block based install
+TARGET_USES_BLOCK_BASED_OTA := false
+
 $(call inherit-product, device/samsung/d2refreshspr/full_d2refreshspr.mk)
 
 # Inherit device common stuff specific to TO
