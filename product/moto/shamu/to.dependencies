@@ -9,7 +9,7 @@
       "remote":      "aosp",
       "repository":  "device/moto/shamu-kernel",
       "target_path": "device/moto/shamu-kernel",
-      "revision":    "refs/tags/android-5.1.1_r13",
+      "revision":    "refs/tags/android-5.1.1_r18",
       "clone_depth": "1"
     },
     {
