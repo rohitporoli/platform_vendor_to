@@ -19,10 +19,10 @@ PRODUCT_PACKAGES += \
     initlogo.rle
 
 # Recovery TWRP
-override RECOVERY_VARIANT := twrp
+#override RECOVERY_VARIANT := twrp
 
-override DEVICE_RESOLUTION := 720x1280
-override RECOVERY_GRAPHICS_USE_LINELENGTH := true
-override TARGET_USE_CUSTOM_LUN_FILE_PATH := sys/devices/virtual/android_usb/android0/f_mass_storage/lun0/file
-override BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache androidboot.selinux=permissive
-override TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
+#override DEVICE_RESOLUTION := 720x1280
+#override RECOVERY_GRAPHICS_USE_LINELENGTH := true
+#override TARGET_USE_CUSTOM_LUN_FILE_PATH := sys/devices/virtual/android_usb/android0/f_mass_storage/lun0/file
+#override BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 zcache androidboot.selinux=permissive
+#override TARGET_RECOVERY_DEVICE_MODULES += twrp.fstab
