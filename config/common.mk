@@ -124,7 +124,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     Eleven \
     LockClock \
-    TOHome
+    CMSettingsProvider
 
 # Custom Team-OctOS packages
 PRODUCT_PACKAGES += \
