@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -29,4 +29,4 @@ PRODUCT_COPY_FILES += \
 
 # Proprietary latinime lib needed for Keyboard swyping
 PRODUCT_COPY_FILES += \
-    vendor/nexus/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+    vendor/to/prebuilt/lib/libjni_latinime.so:system/lib/libjni_latinime.so

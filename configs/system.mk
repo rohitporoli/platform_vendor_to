@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 # Include overlays
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/nexus/overlay/common \
-    vendor/nexus/overlay/dictionaries
+    vendor/to/overlay/common \
+    vendor/to/overlay/dictionaries
 
 # Security Enhanced Linux
 PRODUCT_PROPERTY_OVERRIDES += \

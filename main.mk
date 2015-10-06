@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/nexus/configs/aosp_fixes.mk
-include vendor/nexus/configs/system.mk
-include vendor/nexus/configs/nexus_build.mk
-include vendor/nexus/configs/version.mk
+include vendor/to/configs/aosp_fixes.mk
+include vendor/to/configs/system.mk
+include vendor/to/configs/octos_build.mk
+include vendor/to/configs/version.mk

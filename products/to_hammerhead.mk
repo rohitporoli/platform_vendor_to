@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,20 +13,23 @@
 # limitations under the License.
 
 # Include Pure Nexus common configuration
-include vendor/nexus/main.mk
+include vendor/to/main.mk
 
-# Inherit AOSP device configuration for shamu.
-$(call inherit-product, device/htc/flounder/aosp_flounder.mk)
+# Include Pure Nexus telephony configuration
+include vendor/to/configs/telephony.mk
+
+# Inherit AOSP device configuration for hammerhead
+$(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nexus_flounder
+PRODUCT_NAME := to_hammerhead
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := flounder
-PRODUCT_MODEL := Nexus 9
-PRODUCT_MANUFACTURER := htc
+PRODUCT_DEVICE := hammerhead
+PRODUCT_MODEL := Nexus 5
+PRODUCT_MANUFACTURER := LGE
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=volantis \
-    BUILD_FINGERPRINT=google/volantis/flounder:5.1.1/LMY48M/2167285:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 5.1.1 LMY48M 2167285 release-keys"
+    PRODUCT_NAME=hammerhead \
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:5.1.1/LMY48M/2167285:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 5.1.1 LMY48M 2167285 release-keys"

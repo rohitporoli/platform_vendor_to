@@ -1,4 +1,4 @@
-# Copyright (C) 2015 The Pure Nexus Project
+# Copyright (C) 2015 Team OctOs
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,23 +13,23 @@
 # limitations under the License.
 
 # Include Pure Nexus common configuration
-include vendor/nexus/main.mk
+include vendor/to/main.mk
 
 # Include Pure Nexus telephony configuration
-include vendor/nexus/configs/telephony.mk
+include vendor/to/configs/telephony.mk
 
-# Inherit AOSP device configuration for angler
-$(call inherit-product, device/huawei/angler/aosp_angler.mk)
+# Inherit AOSP device configuration for shamu.
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := nexus_angler
+PRODUCT_NAME := to_shamu
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := angler
-PRODUCT_MODEL := Nexus 6P
-PRODUCT_MANUFACTURER := Huawei
+PRODUCT_DEVICE := shamu
+PRODUCT_MODEL := Nexus 6
+PRODUCT_MANUFACTURER := motorola
 
 # Device Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:5.1.1/LVY48C/1914015:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 5.1.1 LVY48C 1914015 release-keys"
+    PRODUCT_NAME=shamu \
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LYZ28K/2168912:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LYZ28K 2168912 release-keys"
