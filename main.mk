@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/to/configs/aosp_fixes.mk
-include vendor/to/configs/system.mk
-include vendor/to/configs/octos_build.mk
-include vendor/to/configs/version.mk
+include vendor/to/config/aosp_fixes.mk
+include vendor/to/config/system.mk
+include vendor/to/config/octos_build.mk
+include vendor/to/config/to_versioning.mk
