@@ -5,6 +5,3 @@
 
 BOARD_SEPOLICY_DIRS += \
     vendor/to/sepolicy
-
-BOARD_SEPOLICY_UNION := \
-    mac_permissions.xml
