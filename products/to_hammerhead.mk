@@ -16,7 +16,7 @@
 include vendor/to/main.mk
 
 # Include Pure Nexus telephony configuration
-include vendor/to/configs/telephony.mk
+include vendor/to/config/telephony.mk
 
 # Inherit AOSP device configuration for hammerhead
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
