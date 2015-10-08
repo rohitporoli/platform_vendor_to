@@ -21,3 +21,9 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+ifeq ($(TARGET_BUILD_VARIANT),user)
+# Enable ADB authentication for user builds only
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
+else
+ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=0
+endif
