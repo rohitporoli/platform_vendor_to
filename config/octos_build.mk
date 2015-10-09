@@ -17,3 +17,11 @@ PRODUCT_PACKAGES += \
     LatinIME \
     Launcher3 \
     libemoji 
+
+# Wallpappers
+PRODUCT_PACKAGES += \
+    HoloSpiralWallpaper \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    PhaseBeam \
+    PhotoTable
