@@ -18,6 +18,10 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     libemoji 
 
+# OctOs Packages
+PRODUCT_PACKAGES += \
+    AboutOctOs
+
 # Wallpappers
 PRODUCT_PACKAGES += \
     HoloSpiralWallpaper \
