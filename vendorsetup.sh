@@ -1,0 +1,3 @@
+add_lunch_combo to_flo-userdebug
+add_lunch_combo to_hammerhead-userdebug
+add_lunch_combo to_shamu-userdebug
