@@ -26,6 +26,14 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     PhotoTable
 
+# Hide layers manager from launcher
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.layers.noIcon=noIcon
+
+# Add layers manager app to build
+PRODUCT_PACKAGES += \
+    LayersManager
+
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
