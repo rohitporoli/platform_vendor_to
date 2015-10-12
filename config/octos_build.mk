@@ -29,3 +29,7 @@ PRODUCT_PACKAGES += \
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
+
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/supersu/supersu.zip:supersu/supersu.zip
