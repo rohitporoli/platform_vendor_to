@@ -54,5 +54,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=1
 
+SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
+
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
