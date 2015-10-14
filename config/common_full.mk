@@ -9,3 +9,6 @@ PRODUCT_PACKAGES += \
     PhotoTable \
     PhaseBeam
 
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
