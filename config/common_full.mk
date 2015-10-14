@@ -12,3 +12,11 @@ PRODUCT_PACKAGES += \
 # Busybox
 PRODUCT_PACKAGES += \
     Busybox
+
+# Hide layers manager from launcher
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.layers.noIcon=noIcon
+
+# Add layers manager app to build
+PRODUCT_PACKAGES += \
+    LayersManager
