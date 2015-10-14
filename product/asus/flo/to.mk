@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
 # Inherit some common Team OctOs configuration
 $(call inherit-product, vendor/to/config/common_full_tablet_wifionly.mk)
 
