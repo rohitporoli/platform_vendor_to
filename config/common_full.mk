@@ -1,6 +1,10 @@
 # Inherit additional stuff
 $(call inherit-product, vendor/to/config/common.mk)
 
+# OctOs Packages
+PRODUCT_PACKAGES += \
+    AboutOctOs
+
 # Optional packages
 PRODUCT_PACKAGES += \
     HoloSpiralWallpaper \
