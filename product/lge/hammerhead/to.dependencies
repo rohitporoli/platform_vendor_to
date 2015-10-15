@@ -1,7 +1,7 @@
 [
     {
       "remote":      "to",
-      "repository":  "platform_device_lge",
+      "repository":  "platform_device_lge_hammerhead",
       "target_path": "device/lge/hammerhead",
       "revision":    "to-6.0"
     },
