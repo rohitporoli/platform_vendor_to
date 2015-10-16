@@ -56,7 +56,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
+    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip \
+    vendor/to/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # init.d script support
 PRODUCT_COPY_FILES += \
