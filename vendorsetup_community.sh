@@ -5,5 +5,6 @@ add_lunch_combo to_hltetmo-userdebug
 add_lunch_combo to_l900-userdebug
 add_lunch_combo to_m8-userdebug
 add_lunch_combo to_obake-userdebug
+add_lunch_combo to_trltespr-userdebug
 add_lunch_combo to_trltetmo-userdebug
 add_lunch_combo to_ville-userdebug
