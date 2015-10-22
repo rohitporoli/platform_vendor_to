@@ -42,6 +42,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
+# init file
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/etc/init.local.rc:root/init.local.rc
+
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \

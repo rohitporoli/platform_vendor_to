@@ -1,6 +1,3 @@
-# Team OctOs Extras
-import /init.superuser.rc
-
 on init
     export ANDROID_CACHE /cache
     export TERMINFO /system/etc/terminfo
@@ -8,64 +5,37 @@ on init
     # Run sysinit
     start sysinit
 
-    # Set up the BFQIO hierarchy
-    chmod 0755 /sys/fs/cgroup
-    mkdir /sys/fs/cgroup/bfqio 0755 root system
-    mount cgroup none /sys/fs/cgroup/bfqio bfqio
-    write /sys/fs/cgroup/bfqio/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/bfqio.ioprio 3
-    write /sys/fs/cgroup/bfqio/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/tasks
-
-    # Audio (realtime) <= -16
-    mkdir /sys/fs/cgroup/bfqio/rt-audio 0755 root system
-    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio_class 1
-    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.ioprio 1
-    write /sys/fs/cgroup/bfqio/rt-audio/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/rt-audio/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/rt-audio/tasks
-
-    # Display (realtime) <= -4
-    mkdir /sys/fs/cgroup/bfqio/rt-display 0755 root system
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio_class 1
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.ioprio 4
-    write /sys/fs/cgroup/bfqio/rt-display/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/rt-display/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/rt-display/tasks
-
-    # Foreground == -2
-    mkdir /sys/fs/cgroup/bfqio/fg 0755 root system
-    write /sys/fs/cgroup/bfqio/fg/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/fg/bfqio.ioprio 0
-    write /sys/fs/cgroup/bfqio/fg/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/fg/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/fg/tasks
-
-    # Background >= 10
-    mkdir /sys/fs/cgroup/bfqio/bg 0755 root system
-    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio_class 2
-    write /sys/fs/cgroup/bfqio/bg/bfqio.ioprio 2
-    write /sys/fs/cgroup/bfqio/bg/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/bg/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/bg/tasks
-
-    # Idle >= 18
-    mkdir /sys/fs/cgroup/bfqio/idle 0755 root system
-    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio_class 3
-    write /sys/fs/cgroup/bfqio/idle/bfqio.ioprio 3 
-    write /sys/fs/cgroup/bfqio/idle/bfqio.weight 1000
-    chown root system /sys/fs/cgroup/bfqio/idle/tasks
-    chmod 0666 /sys/fs/cgroup/bfqio/idle/tasks
-
 on boot
+
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
     restorecon /sys/block/mmcblk0/queue/scheduler
-    setenforce 0
 
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system
+
+    # Wake Gestures
+    chown system system /sys/android_touch/doubletap2wake
+    chmod 0644 /sys/android_touch/doubletap2wake
+    chown system system /sys/android_touch/sweep2wake
+    chmod 0644 /sys/android_touch/sweep2wake
+    chown system system /sys/android_touch/sweep2sleep
+    chmod 0644 /sys/android_touch/sweep2sleep
+    chown system system /sys/android_touch/wake_gestures
+    chmod 0644 /sys/android_touch/wake_gestures
+    chown system system /sys/android_touch/vib_strength
+    chmod 0644 /sys/android_touch/vib_strength
+    write /sys/android_touch/vib_strength 40
+
+    # Adreno Idler
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_active
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_active
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_downdifferential
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_downdifferential
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_idewait
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_idewait
+    chown system system /sys/module/adreno_idler/parameters/adreno_idler_ideworkload
+    chmod 0644 /sys/module/adreno_idler/parameters/adreno_idler_ideworkload
 
 # adb over network
 on property:service.adb.tcp.port=5555
@@ -74,12 +44,6 @@ on property:service.adb.tcp.port=5555
 on property:service.adb.tcp.port=-1
     stop adbd
     start adbd
-
-# For now default this to opendns until we modify the code to read a system propery
-# dnscrypt proxy
-service dnscrypt-proxy /system/xbin/dnscrypt-proxy
-    class main
-    disabled
 
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
