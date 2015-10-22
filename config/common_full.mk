@@ -3,7 +3,8 @@ $(call inherit-product, vendor/to/config/common.mk)
 
 # Main Packages
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    LockClock
 
 # OctOs Packages
 PRODUCT_PACKAGES += \
