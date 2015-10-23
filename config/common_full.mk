@@ -16,7 +16,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     PhotoTable \
-    PhaseBeam
+    PhaseBeam \
+    BlueBalls
 
 # Busybox
 PRODUCT_PACKAGES += \
