@@ -1,4 +1,5 @@
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_grouper-userdebug
 add_lunch_combo to_hammerhead-userdebug
+add_lunch_combo to_mako-userdebug
 add_lunch_combo to_shamu-userdebug
