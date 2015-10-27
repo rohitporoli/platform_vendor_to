@@ -8,7 +8,8 @@ PRODUCT_PACKAGES += \
 
 # OctOs Packages
 PRODUCT_PACKAGES += \
-    AboutOctOs
+    AboutOctOs \
+    FileManager
 
 # Wallpapers
 PRODUCT_PACKAGES += \
