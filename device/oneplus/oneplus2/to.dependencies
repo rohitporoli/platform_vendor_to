@@ -1,0 +1,32 @@
+[
+  {
+    "remote": "gh",
+    "repository": "Grarak/android_device_oneplus_oneplus2",
+    "target_path": "device/oneplus/oneplus2",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_external_mm-dash",
+    "target_path": "external/mm-dash",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "gh",
+    "repository": "Grarak/android_kernel_oneplus_msm8994",
+    "target_path": "kernel/oneplus/msm8994",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision": "cm-12.1"
+  },
+  {
+    "remote": "gh",
+    "repository": "Grarak/proprietary_vendor_oneplus",
+    "target_path": "vendor/oneplus",
+    "revision": "cm-12.1"
+  }
+]
