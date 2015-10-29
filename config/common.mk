@@ -48,7 +48,6 @@ PRODUCT_COPY_FILES += \
 
 # Copy latinime for gesture typing
 PRODUCT_COPY_FILES += \
-    vendor/to/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so \
     vendor/to/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # Enable SIP+VoIP on all targets
