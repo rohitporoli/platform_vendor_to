@@ -1,3 +1,7 @@
+# Default toolchains
+TARGET_GCC_VERSION_AND := 4.9
+TARGET_GCC_VERSION_ARM := 4.9
+
 # Include OctOS bootanimation
 include vendor/to/config/bootanimation.mk
 
