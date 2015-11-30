@@ -1,10 +1,7 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common TO stuff
+$(call inherit-product, vendor/to/config/common.mk)
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
-
-# Required CM packages
+# Required TO packages
 PRODUCT_PACKAGES += \
     LatinIME
 
@@ -15,7 +12,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
+        vendor/to/prebuilt/common/bootanimation/320.zip:system/media/bootanimation.zip
 endif
 
-$(call inherit-product, vendor/cm/config/telephony.mk)
+$(call inherit-product, vendor/to/config/telephony.mk)

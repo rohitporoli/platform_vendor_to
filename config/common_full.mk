@@ -1,10 +1,7 @@
-# Inherit common CM stuff
-$(call inherit-product, vendor/cm/config/common.mk)
+# Inherit common TO stuff
+$(call inherit-product, vendor/to/config/common.mk)
 
-# Include CM audio files
-include vendor/cm/config/cm_audio.mk
-
-# Optional CM packages
+# Optional TO packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
     HoloSpiralWallpaper \
@@ -17,7 +14,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     PhotoPhase
 
-# Extra tools in CM
+# Extra tools in TO
 PRODUCT_PACKAGES += \
     7z \
     bash \
