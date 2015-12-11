@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/to/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
+
 # Theme engine
 include vendor/to/config/themes_common.mk
 
