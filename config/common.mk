@@ -99,7 +99,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     AudioFX \
-    CMFileManager \
     Eleven \
     LockClock \
     CMSettingsProvider \

@@ -1,6 +1,11 @@
 # Inherit common TO stuff
 $(call inherit-product, vendor/to/config/common.mk)
 
+# OctOs Packages
+PRODUCT_PACKAGES += \
+    AboutOctOs \
+    FileManager
+
 # Optional TO packages
 PRODUCT_PACKAGES += \
     Galaxy4 \
