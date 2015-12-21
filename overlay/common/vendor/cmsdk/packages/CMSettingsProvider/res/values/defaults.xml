@@ -26,5 +26,5 @@
     <!-- Defaults for Secure -->
 
     <!-- Default for CMSettings.Secure.STATS_COLLECTION -->
-    <bool name="def_stats_collection">true</bool>
+    <bool name="def_stats_collection">false</bool>
 </resources>
