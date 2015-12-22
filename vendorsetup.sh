@@ -12,4 +12,5 @@ add_lunch_combo to_jfltetmo-userdebug
 add_lunch_combo to_jfltevzw-userdebug
 add_lunch_combo to_jfltexx-userdebug
 add_lunch_combo to_ls990-userdebug
+add_lunch_combo to_shamu-userdebug
 add_lunch_combo to_vs985-userdebug
