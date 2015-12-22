@@ -3,7 +3,7 @@
     "remote": "to",
     "repository": "platform_device_samsung_d2refreshspr",
     "target_path": "device/samsung/d2refreshspr",
-    "revision": "to-6.0"
+    "revision": "oct-mm"
   },
   {
     "remote": "cm",
