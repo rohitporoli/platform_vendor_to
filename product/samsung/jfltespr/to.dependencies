@@ -25,9 +25,9 @@
   },
   {
     "remote": "cm",
-    "repository": "platform_hardware_samsung",
+    "repository": "android_hardware_samsung",
     "target_path": "hardware/samsung",
-    "revision": "13.0"
+    "revision": "cm-13.0"
   },
   {
     "remote": "tm",
