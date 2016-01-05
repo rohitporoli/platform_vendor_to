@@ -8,6 +8,7 @@ add_lunch_combo to_d2vzw-userdebug
 add_lunch_combo to_d850-userdebug
 add_lunch_combo to_d851-userdebug
 add_lunch_combo to_d855-userdebug
+add_lunch_combo to_flo-userdebug
 add_lunch_combo to_ghost-userdebug
 add_lunch_combo to_jflteatt-userdebug
 add_lunch_combo to_jfltespr-userdebug
