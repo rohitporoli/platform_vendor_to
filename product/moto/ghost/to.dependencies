@@ -13,20 +13,26 @@
   },
   {
     "remote": "cm",
+    "repository": "android_external_sony_boringssl-compat",
+    "target_path": "external/sony/boringssl-compat",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
     "repository": "android_kernel_motorola_ghost",
     "target_path": "kernel/motorola/ghost",
     "revision": "cm-13.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_device_motorola_msm8960dt-common",
+    "remote": "to",
+    "repository": "platform_device_motorola_msm8960dt-common",
     "target_path": "device/motorola/msm8960dt-common",
-    "revision": "cm-13.0"
+    "revision": "oct-mm"
   },
   {
-    "remote": "tm",
-    "repository": "proprietary_vendor_motorola",
-    "target_path": "vendor/motorola",
-    "revision": "cm-13.0"
+    "remote": "to",
+    "repository": "proprietary_vendor_moto_msm8960dt-common",
+    "target_path": "vendor/moto/msm8960dt-common",
+    "revision": "oct-mm"
   }
 ]
