@@ -34,5 +34,11 @@
     "repository": "proprietary_vendor_moto_msm8960dt-common",
     "target_path": "vendor/moto/msm8960dt-common",
     "revision": "oct-mm"
+  },
+  {
+    "remote": "tm",
+    "repository": "proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "revision": "cm-13.0"
   }
 ]
