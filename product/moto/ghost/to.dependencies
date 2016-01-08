@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_motorola_ghost",
+    "remote": "to",
+    "repository": "platform_device_motorola_ghost",
     "target_path": "device/motorola/ghost",
-    "revision": "cm-13.0"
+    "revision": "oct-mm"
   },
   {
     "remote": "cm",
@@ -31,8 +31,8 @@
   },
   {
     "remote": "to",
-    "repository": "proprietary_vendor_moto_msm8960dt-common",
-    "target_path": "vendor/moto/msm8960dt-common",
+    "repository": "proprietary_vendor_moto",
+    "target_path": "vendor/moto",
     "revision": "oct-mm"
   }
 ]
