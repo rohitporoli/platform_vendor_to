@@ -1,3 +1,6 @@
+# Do not install SuperSu
+INSTALL_SUPERSU := false
+
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 # Enhanced NFC
