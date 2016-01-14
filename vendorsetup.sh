@@ -10,6 +10,7 @@ add_lunch_combo to_d851-userdebug
 add_lunch_combo to_d855-userdebug
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_ghost-userdebug
+add_lunch_combo to_grouper-userdebug
 add_lunch_combo to_hammerhead-userdebug
 add_lunch_combo to_jflteatt-userdebug
 add_lunch_combo to_jfltespr-userdebug
