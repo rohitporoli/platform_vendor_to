@@ -1,3 +1,11 @@
+LOCAL_PATH := $(call my-dir)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+
+# Team OctOs device maintainer info
+ifneq (COMMUNITY, $(TO_BUILDTYPE))
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/moto/shamu/maintainer
+endif
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
@@ -10,6 +18,14 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
+
+# Remove fstab.bullhead from PRODUCT_COPY_FILES
+TARGET_COPY_FILES_OVERRIDES := \
+    root/fstab.bullhead
+
+# Add fstab.bullhead as a module
+PRODUCT_PACKAGES += \
+    fstab.bullhead
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := to_bullhead
