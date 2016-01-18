@@ -15,13 +15,13 @@
       "remote":      "to",
       "repository":  "proprietary_vendor_asus",
       "target_path": "vendor/asus",
-      "revision":    "to-6.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "to",
       "repository":  "proprietary_vendor_broadcom",
       "target_path": "vendor/broadcom",
-      "revision":    "to-6.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "to",
@@ -30,7 +30,7 @@
       "revision":    "to-6.0"
     },
     {
-      "remote":     "cm",  
+      "remote":     "cm",
       "repository": "android_external_stlport",
       "target_path": "external/stlport",
       "revision":    "cm-13.0"
