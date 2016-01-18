@@ -1,6 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Do not use block based install
+TARGET_USES_BLOCK_BASED_OTA := false
+
 $(call inherit-product, device/samsung/d2refreshspr/full_d2refreshspr.mk)
 
 # Inherit device common stuff specific to TO
@@ -17,3 +20,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_NAME := to_d2refreshspr
 PRODUCT_DEVICE := d2refreshspr
+
+# Copy APNFix and Aroma installer to $OUT
+$(shell mkdir -p $(OUT))
+$(shell cp -r $(ANDROID_BUILD_TOP)/vendor/to/product/samsung/d2refreshspr/octotools $(OUT))
+
+override TARGET_RELEASETOOLS_EXTENSIONS := vendor/to/product/samsung/d2refreshspr
