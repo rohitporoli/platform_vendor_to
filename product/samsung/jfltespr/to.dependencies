@@ -24,10 +24,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_kernel_samsung_jf",
+    "remote": "to",
+    "repository": "platform_kernel_samsung_jf",
     "target_path": "kernel/samsung/jf",
-    "revision": "cm-13.0"
+    "revision": "oct-mm"
   },
   {
     "remote": "cm",
