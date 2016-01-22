@@ -14,7 +14,8 @@ PRODUCT_PACKAGES += \
     PhaseBeam \
     PhotoTable \
     SoundRecorder \
-    PhotoPhase
+    PhotoPhase \
+    BlueBalls
 
 # Extra tools in TO
 PRODUCT_PACKAGES += \
