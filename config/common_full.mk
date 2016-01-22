@@ -29,3 +29,7 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
+
+# Busybox
+PRODUCT_PACKAGES += \
+    Busybox
