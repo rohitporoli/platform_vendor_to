@@ -83,6 +83,10 @@ ifneq ($(INSTALL_SUPERSU),false)
         vendor/to/prebuilt/common/supersu/supersu.zip:supersu/supersu.zip
 endif
 
+# Live lockscreen
+PRODUCT_COPY_FILES += \
+    vendor/to/config/permissions/org.cyanogenmod.livelockscreen.xml:system/etc/permissions/org.cyanogenmod.livelockscreen.xml
+
 # Theme engine
 include vendor/to/config/themes_common.mk
 
