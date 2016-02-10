@@ -1,0 +1,68 @@
+[
+  {
+    "remote": "caf",
+    "repository": "platform/hardware/qcom/audio",
+    "target_path": "hardware/qcom/audio-caf",
+    "revision": "LA.AF.1.1.c1"
+  },
+  {
+    "remote": "caf",
+    "repository": "platform/hardware/qcom/display",
+    "target_path": "hardware/qcom/display-caf",
+    "revision": "LA.AF.1.1.c1"
+  },
+  {
+    "remote": "caf",
+    "repository": "platform/hardware/qcom/media",
+    "target_path": "hardware/qcom/media-caf",
+    "revision": "LA.AF.1.1.c1"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_qcom_common",
+    "target_path": "device/qcom/common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_qcom_sepolicy",
+    "target_path": "device/qcom/sepolicy",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_qcom-common",
+    "target_path": "device/samsung/qcom-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_msm8930-common",
+    "target_path": "device/samsung/msm8930-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_device_samsung_serrano-common",
+    "target_path": "device/samsung/serrano-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_kernel_samsung_msm8930-common",
+    "target_path": "kernel/samsung/msm8930-common",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "tm",
+    "repository": "proprietary_vendor_samsung",
+    "target_path": "vendor/samsung",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport",
+    "revision": "cm-13.0"
+  }
+]
