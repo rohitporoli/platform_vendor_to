@@ -11,6 +11,7 @@ add_lunch_combo to_d855-userdebug
 add_lunch_combo to_flo-userdebug
 add_lunch_combo to_ghost-userdebug
 add_lunch_combo to_grouper-userdebug
+add_lunch_combo to_h811-userdebug
 add_lunch_combo to_hammerhead-userdebug
 add_lunch_combo to_i605-userdebug
 add_lunch_combo to_jflteatt-userdebug
