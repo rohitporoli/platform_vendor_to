@@ -1,9 +1,9 @@
 [
   {
-    "remote": "to",
-    "repository": "platform_device_motorola_ghost",
+    "remote": "cm",
+    "repository": "android_device_motorola_ghost",
     "target_path": "device/motorola/ghost",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "cm",
@@ -24,15 +24,15 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "platform_device_motorola_msm8960dt-common",
+    "remote": "cm",
+    "repository": "android_device_motorola_msm8960dt-common",
     "target_path": "device/motorola/msm8960dt-common",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "proprietary_vendor_moto",
-    "target_path": "vendor/moto",
-    "revision": "oct-mm"
+    "remote": "tm",
+    "repository": "proprietary_vendor_motorola",
+    "target_path": "vendor/motorola",
+    "revision": "cm-13.0"
   }
 ]
