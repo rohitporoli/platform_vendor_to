@@ -1,15 +1,15 @@
 [
     {
-      "remote":      "cm",
-      "repository":  "android_device_lge_ls990",
+      "remote":      "to",
+      "repository":  "platform_device_lge_ls990",
       "target_path": "device/lge/ls990",
-      "revision":    "cm-13.0"
+      "revision":    "oct-mm"
     },
     {
-      "remote":      "cm",
-      "repository":  "android_device_lge_g3-common",
+      "remote":      "to",
+      "repository":  "platform_device_lge_g3-common",
       "target_path": "device/lge/g3-common",
-      "revision":    "cm-13.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "cm",
@@ -18,10 +18,10 @@
       "revision":    "cm-13.0"
     },
     {
-      "remote":      "cm",
-      "repository":  "android_kernel_lge_g3",
+      "remote":      "to",
+      "repository":  "platform_kernel_lge_g3",
       "target_path": "kernel/lge/g3",
-      "revision":    "cm-13.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "tm",
