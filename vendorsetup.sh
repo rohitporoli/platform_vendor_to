@@ -22,4 +22,5 @@ add_lunch_combo to_ls990-userdebug
 add_lunch_combo to_serranolteusc-userdebug
 add_lunch_combo to_shamu-userdebug
 add_lunch_combo to_t0lte-userdebug
+add_lunch_combo to_victara-userdebug
 add_lunch_combo to_vs985-userdebug
