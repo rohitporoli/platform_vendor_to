@@ -7,6 +7,9 @@ KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.
 TARGET_GCC_VERSION_EXP := 5.3-uber
 endif
 
+#Device overlay
+DEVICE_PACKAGE_OVERLAYS += vendor/to/product/moto/shamu/overlay
+
 # Team OctOs device maintainer info
 ifneq (COMMUNITY, $(TO_BUILDTYPE))
 DEVICE_PACKAGE_OVERLAYS += vendor/to/product/moto/shamu/maintainer
