@@ -7,7 +7,7 @@ $(call inherit-product, vendor/to/config/common_full_phone.mk)
 $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/victara/overlay
 
 PRODUCT_RELEASE_NAME := MOTO X (2014)
 PRODUCT_NAME := to_victara
