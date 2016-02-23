@@ -11,6 +11,9 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/motorola/ghost/full_ghost.mk)
 
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += device/motorola/victara/overlay
+
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ghost
 PRODUCT_NAME := to_ghost 

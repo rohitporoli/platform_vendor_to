@@ -7,6 +7,12 @@
   },
   {
     "remote": "cm",
+    "repository": "android_external_stlport",
+    "target_path": "external/stlport",
+    "revision": "cm-13.0"
+  },
+  {
+    "remote": "cm",
     "repository": "android_device_qcom_common",
     "target_path": "device/qcom/common",
     "revision": "cm-13.0"
@@ -24,10 +30,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "to",
-    "repository": "platform_device_motorola_msm8960dt-common",
+    "remote": "cm",
+    "repository": "android_device_motorola_msm8960dt-common",
     "target_path": "device/motorola/msm8960dt-common",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "tm",
