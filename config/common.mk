@@ -111,7 +111,8 @@ PRODUCT_PACKAGES += \
     Eleven \
     LockClock \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
