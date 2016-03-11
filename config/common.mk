@@ -186,7 +186,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.root_access=0
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/to/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/to/overlay/common
 
 # Include OctOS versioning
 include vendor/to/config/to_versioning.mk
