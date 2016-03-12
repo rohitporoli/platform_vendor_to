@@ -17,6 +17,12 @@
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 800
 
+# Build using uber toolchain on linux but use default toolchain on darwin.
+ifneq ($(HOST_OS),darwin)
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-uber/bin
+TARGET_GCC_VERSION_EXP := 4.9-uber
+endif
+
 #PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Inherit some common Team OctOs configuration
