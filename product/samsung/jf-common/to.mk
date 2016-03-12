@@ -6,9 +6,11 @@ ifneq (COMMUNITY, $(TO_BUILDTYPE))
 DEVICE_PACKAGE_OVERLAYS += vendor/to/product/samsung/jf-common/maintainer
 endif
 
-# Custom toolchains
-# override TARGET_GCC_VERSION_AND := 4.8-sm
-# override TARGET_GCC_VERSION_ARM := 4.9-sm
+# Build using uber toolchain on linux but use default toolchain on darwin.
+ifneq ($(HOST_OS),darwin)
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/bin
+TARGET_GCC_VERSION_EXP := 5.3-uber
+endif
 
 ## TWRP
 ## TARGET_RECOVERY_FSTAB := device/samsung/jflte/multirom/twrp.fstab
