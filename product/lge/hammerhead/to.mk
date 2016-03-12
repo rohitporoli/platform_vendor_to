@@ -3,6 +3,12 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 TARGET_BOOTANIMATION_HALF_RES := true
 
+# Build using uber toolchain on linux but use default toolchain on darwin.
+ifneq ($(HOST_OS),darwin)
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-uber/bin
+TARGET_GCC_VERSION_EXP := 4.9-uber
+endif
+
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/to/config/common_full_phone.mk)
 
