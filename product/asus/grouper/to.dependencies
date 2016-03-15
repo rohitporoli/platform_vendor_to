@@ -19,8 +19,8 @@
     },
     {
       "remote":      "to",
-      "repository":  "proprietary_vendor_asus",
-      "target_path": "vendor/asus",
+      "repository":  "proprietary_vendor_asus_grouper",
+      "target_path": "vendor/asus-grouper",
       "revision":    "oct-mm"
     },
     {
