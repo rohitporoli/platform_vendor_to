@@ -1,5 +1,7 @@
 add_lunch_combo to_angler-userdebug
+add_lunch_combo to_armani-userdebug
 add_lunch_combo to_bullhead-userdebug
+add_lunch_combo to_cancro-userdebug
 add_lunch_combo to_d2att-userdebug
 add_lunch_combo to_d2refreshspr-userdebug
 add_lunch_combo to_d2spr-userdebug
@@ -15,6 +17,7 @@ add_lunch_combo to_h811-userdebug
 add_lunch_combo to_h815-userdebug
 add_lunch_combo to_hammerhead-userdebug
 add_lunch_combo to_i605-userdebug
+add_lunch_combo to_i9100-userdebug
 add_lunch_combo to_jflteatt-userdebug
 add_lunch_combo to_jfltespr-userdebug
 add_lunch_combo to_jfltetmo-userdebug
