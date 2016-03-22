@@ -5,6 +5,7 @@ $(call inherit-product, vendor/to/config/common.mk)
 PRODUCT_PACKAGES += \
     AboutOctOs \
     FileManager \
+    KernelAdiutor \
     OmniSwitch
 
 # Optional TO packages
