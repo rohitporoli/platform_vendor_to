@@ -13,7 +13,7 @@
   },
   { 
     "remote": "github",
-    "repository": "armani-dev/kernel_test",
+    "repository": "armani-dev/android_kernel_xiaomi_armani",
     "target_path": "kernel/xiaomi/armani",
     "revision": "cm-13.0"
   },
