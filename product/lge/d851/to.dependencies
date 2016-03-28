@@ -1,13 +1,13 @@
 [
     {
-      "remote":      "to",
-      "repository":  "platform_device_lge_d851",
+      "remote":      "github",
+      "repository":  "Oct-mm/platform_device_lge_d851",
       "target_path": "device/lge/d851",
       "revision":    "oct-mm"
     },
     {
-      "remote":      "to",
-      "repository":  "platform_device_lge_g3-common",
+      "remote":      "github",
+      "repository":  "Oct-mm/platform_device_lge_g3-common",
       "target_path": "device/lge/g3-common",
       "revision":    "oct-mm"
     },
@@ -18,10 +18,11 @@
       "revision":    "cm-13.0"
     },
     {
-      "remote":      "github",
-      "repository":  "Oct-mm/platform_kernel_lge_g3",
+      "remote":      "bitbucket",
+      "repository":  "bthorne79/kernel_lge_g3",
       "target_path": "kernel/lge/g3",
-      "revision":    "kraken-r2"
+      "revision":    "master",
+      "clone_depth": "1"
     },
     {
       "remote":      "tm",
