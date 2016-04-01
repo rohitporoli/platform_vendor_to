@@ -6,14 +6,14 @@
    "revision": "cm-13.0"
   },
   {
-   "remote": "github",
-   "repository": "MrBaNkS/android_device_xiaomi_cancro",
+   "remote": "cm",
+   "repository": "android_device_xiaomi_cancro",
    "target_path": "device/xiaomi/cancro",
    "revision": "cm-13.0"
   },
   {
-   "remote": "github",
-   "repository": "MrBaNkS/android_kernel_xiaomi_cancro",
+   "remote": "cm",
+   "repository": "android_kernel_xiaomi_cancro",
    "target_path": "kernel/xiaomi/cancro",
    "revision": "cm-13.0"
   },
