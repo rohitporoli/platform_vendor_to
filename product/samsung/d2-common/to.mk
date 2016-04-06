@@ -3,8 +3,8 @@ include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
 # Build using sabermod toolchain on linux but use default toolchain on darwin.
 ifneq ($(HOST_OS),darwin)
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm/bin
-TARGET_GCC_VERSION_EXP := 4.9-sm
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/bin
+TARGET_GCC_VERSION_EXP := 5.3-uber
 endif
 
 # Team OctOs device maintainer info
