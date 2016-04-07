@@ -1,9 +1,9 @@
 [
   {
-    "remote": "cm",
-    "repository": "android_device_motorola_victara",
+    "remote": "github",
+    "repository": "Oct-mm/android_device_motorola_victara",
     "target_path": "device/motorola/victara",
-    "revision": "cm-13.0"
+    "revision": "oct-mm"
   },
   {
     "remote": "cm",
@@ -18,10 +18,11 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "cm",
-    "repository": "android_kernel_motorola_msm8974",
+    "remote": "github",
+    "repository": "Oct-mm/kernel_motorola_msm8974",
     "target_path": "kernel/motorola/msm8974",
-    "revision": "cm-13.0"
+    "revision": "oct-mm",
+    "clone_depth": "1"
   },
   {
     "remote": "tm",
