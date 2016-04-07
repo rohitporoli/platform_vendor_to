@@ -1,0 +1,38 @@
+[
+    {
+      "remote":      "to",
+      "repository":  "platform_device_lge_us990",
+      "target_path": "device/lge/us990",
+      "revision":    "oct-mm"
+    },
+    {
+      "remote":      "to",
+      "repository":  "platform_device_lge_g3-common",
+      "target_path": "device/lge/g3-common",
+      "revision":    "oct-mm"
+    },
+    {
+      "remote":      "cm",
+      "repository":  "android_device_qcom_common",
+      "target_path": "device/qcom/common",
+      "revision":    "cm-13.0"
+    },
+    {
+      "remote":      "github",
+      "repository":  "jorapi/android_kernel_lge_g3",
+      "target_path": "kernel/lge/us990",
+      "revision":    "cm-13.0"
+    },
+    {
+      "remote":      "tm",
+      "repository":  "proprietary_vendor_lge",
+      "target_path": "vendor/lge",
+      "revision":    "cm-13.0"
+    },
+    {
+      "remote":      "to",
+      "repository":  "platform_vendor_lge_g3-common_us990",
+      "target_path": "vendor/lge/g3-common",
+      "revision":    "oct-mm"
+    }
+]
