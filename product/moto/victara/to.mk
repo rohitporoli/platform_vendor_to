@@ -1,5 +1,8 @@
 $(call inherit-product, device/motorola/victara/full_victara.mk)
 
+# Custom kernel defconfig (Must exist in kernel source)
+TARGET_KERNEL_CONFIG_CUSTOM := octos_victara_defconfig
+
 # Build using uber toolchain on linux but use default toolchain on darwin.
 ifneq ($(HOST_OS),darwin)
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/bin
