@@ -1,6 +1,9 @@
 LOCAL_PATH := $(call my-dir)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 
+# Custom kernel defconfig (Must exist in kernel source)
+TARGET_KERNEL_CONFIG_CUSTOM := octos_d2_defconfig
+
 # Build using sabermod toolchain on linux but use default toolchain on darwin.
 ifneq ($(HOST_OS),darwin)
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-uber/bin

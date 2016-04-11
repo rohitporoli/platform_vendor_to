@@ -6,10 +6,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "github",
-    "repository": "Oct-mm/android_device_samsung_d2-common",
+    "remote": "cm",
+    "repository": "android_device_samsung_d2-common",
     "target_path": "device/samsung/d2-common",
-    "revision": "oct-mm"
+    "revision": "cm-13.0"
   },
   {
     "remote": "cm",
@@ -30,11 +30,10 @@
     "revision": "cm-13.0"
   },
   {
-    "remote": "bitbucket",
-    "repository": "bthorne79/kernel_samsung_d2",
+    "remote": "to",
+    "repository": "platform_kernel_samsung_d2",
     "target_path": "kernel/samsung/d2",
-    "revision": "oct-mm",
-    "clone_depth": "1"
+    "revision": "oct-mm"
   },
   {
     "remote": "tm",
