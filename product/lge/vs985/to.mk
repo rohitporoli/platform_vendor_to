@@ -8,6 +8,8 @@ $(call inherit-product, vendor/to/config/nfc_enhanced.mk)
 
 $(call inherit-product, vendor/to/product/lge/g3-common/to.mk)
 
+# Custom kernel defconfig (Must exist in kernel source)
+TARGET_KERNEL_CONFIG_CUSTOM := octos_vs985_defconfig
 
 PRODUCT_NAME := to_vs985
 
