@@ -21,8 +21,7 @@
       "remote":      "to",
       "repository":  "platform_kernel_lge_g3",
       "target_path": "kernel/lge/g3",
-      "revision":    "oct-mm",
-      "clone_depth": "1"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "tm",
