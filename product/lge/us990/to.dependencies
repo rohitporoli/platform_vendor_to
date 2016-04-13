@@ -18,10 +18,10 @@
       "revision":    "cm-13.0"
     },
     {
-      "remote":      "github",
-      "repository":  "jorapi/android_kernel_lge_g3",
+      "remote":      "to",
+      "repository":  "platform_kernel_lge_us990",
       "target_path": "kernel/lge/us990",
-      "revision":    "cm-13.0"
+      "revision":    "oct-mm"
     },
     {
       "remote":      "tm",
