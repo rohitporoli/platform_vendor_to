@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
     PhotoTable \
     SoundRecorder \
     PhotoPhase \
-    BlueBalls
+    BlueBalls \
+    OpenWeatherMapProvider
 
 # Extra tools in TO
 PRODUCT_PACKAGES += \
