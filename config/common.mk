@@ -34,7 +34,7 @@ PRODUCT_COPY_FILES += \
     vendor/to/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
 
 # Backup Tool
-ifneq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
+ifeq (,$(filter true, $(CYNGN_TARGET) $(EXTERNAL_CLEAN_TARGET)))
 PRODUCT_COPY_FILES += \
     vendor/to/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/to/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
